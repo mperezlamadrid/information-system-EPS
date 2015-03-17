@@ -1,0 +1,134 @@
+/* ============================
+            Header
+// =========================== */
+header{
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  border-bottom: 1px solid #E7E7E8;
+}
+header .content{
+  padding: 0 15px;
+  height: 90px;
+}
+.logo-wrapper{
+  padding-top: 25px;
+
+  a{
+    img{
+      height: 60px;
+    }
+  }
+}
+.principal-navigation{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px;
+}
+.principal-navigation>li{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.principal-navigation>li a{
+  padding: 21px 30px;
+  height: 100%;
+  padding: 39px 32px;
+  text-decoration: none;
+  color: #6B6C6C;
+  font-size: 13px;
+  font-weight: 300;
+  display: inline-block;
+}
+.principal-navigation>li.login-button a{
+  margin-left: 14px;
+  -webkit-appearance: none;
+  background-color: #009EE1;
+  font-size: 14px;
+  border: 0;
+  color: #FFF;
+  transition: background-color 300ms ease-out;
+  margin-top: 31px;
+  width: 103px;
+  text-align: center;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.principal-navigation>li.login-button a:hover{
+  background-color: #007EB4;
+}
+.principal-navigation li:hover{
+  background-color: #555;
+  color: white;
+}
+.principal-navigation>li:hover>a{
+  color: white;
+}
+.principal-navigation>li a:hover{
+  background: #00ADEF;
+  color: white;
+}
+.sub-menu{
+  position: absolute;
+  z-index: 2;
+  background: #B5B6B6;
+  display: none;
+}
+.sub-menu a{
+  padding: 0 30px;
+  display: block;
+  white-space: nowrap;
+}
+.sub-menu li:hover a{
+  background: none;
+}
+.principal-navigation>li:hover .sub-menu{
+  display: inline-block;
+}
+.login-button:hover{
+  background: none !important;
+}
+
+@media (max-width: 900px) {
+  header{
+      position: relative;
+  }
+  header .content {
+      padding: 0 30px 0 30px;
+  }
+  .principal-navigation li{
+      display: none;
+  }
+  .principal-navigation li.login-button{
+      display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-wrapper{padding-top: 30px;}
+  .logo-wrapper img{width: 119px;}
+
+  .principal-navigation>li.login-button a{
+      width: 52px;
+  }
+}
+
+.content-eps-landing{
+  padding-top: 107px;
+  background-image: asset-url('bg-eps.jpg');
+  background-size: cover;
+
+  .title{
+    h2{
+      color: #FFF;
+    }
+  }
+
+  .eps-content{
+    p{
+      color: #FFF;
+    }
+  }
+}
