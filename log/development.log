@@ -3594,3 +3594,734 @@ Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 11:50:50 -0500
 
 
 Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 11:50:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (17.5ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 11:53:59 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 11:54:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 11:58:48 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined local variable or method `aministracion_index' for #<#<Class:0x007ff081ba9ce8>:0x007ff081ba9310>):
+    44: 		            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    45: 		            | tempor incididunt ut labore et dolore magna aliqua.
+    46: 		      .col-md-4
+    47: 		      	a href=aministracion_index
+    48: 			        .solutions-imges
+    49: 			          = image_tag("attention.png", alt: "posts")
+    50: 		        .feature-text
+  app/views/home/index.html.slim:47:in `_app_views_home_index_html_slim__2033797875247007118_70335465873340'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 11:58:58 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (13.6ms)
+Completed 200 OK in 1759ms (Views: 1758.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 11:59:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:00:28 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (25.3ms)
+Completed 200 OK in 2002ms (Views: 2001.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:00:30 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:01:21 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (19.8ms)
+Completed 200 OK in 114ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:01:22 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:01:23 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:01:25 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:01:44 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 84ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (14.3ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:02:50 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:04:12 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (1.4ms)
+Completed 200 OK in 679ms (Views: 678.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:04:13 -0500
+
+
+Started GET "/aministracion" for 127.0.0.1 at 2015-03-26 12:04:14 -0500
+
+ActionController::RoutingError (uninitialized constant AministracionController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.7ms)
+
+
+Started GET "/aministracion" for 127.0.0.1 at 2015-03-26 12:04:14 -0500
+
+ActionController::RoutingError (uninitialized constant AministracionController):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.5ms)
+
+
+Started GET "/aministracion" for 127.0.0.1 at 2015-03-26 12:04:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/aministracion"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:04:48 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `aministracion_index_path' for #<#<Class:0x007ff080e43c48>:0x007ff080e42f78>):
+    36: 		    .row
+    37: 		      .col-md-4
+    38: 		      	a.section-service href=""
+    39: 		      	= link_to aministracion_index_path
+    40: 			        .solutions-imges
+    41: 			        	= image_tag("admin.png", alt: "contacts")
+    42: 		        .feature-text
+  app/views/home/index.html.slim:39:in `_app_views_home_index_html_slim__2033797875247007118_70335491251720'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:04:50 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `aministracion_index_path' for #<#<Class:0x007ff080e43c48>:0x007ff08237acd8>):
+    36: 		    .row
+    37: 		      .col-md-4
+    38: 		      	a.section-service href=""
+    39: 		      	= link_to aministracion_index_path
+    40: 			        .solutions-imges
+    41: 			        	= image_tag("admin.png", alt: "contacts")
+    42: 		        .feature-text
+  app/views/home/index.html.slim:39:in `_app_views_home_index_html_slim__2033797875247007118_70335491251720'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (15.5ms)
+Completed 200 OK in 118ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:04:59 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:05:00 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:05:00 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:05:00 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:05:00 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:05:00 -0500
+
+
+Started GET "/administracion" for 127.0.0.1 at 2015-03-26 12:05:01 -0500
+Processing by AdministracionController#index as HTML
+  Rendered administracion/index.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (1.2ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:05:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim within layouts/application (16.8ms)
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-03-26 12:06:09 -0500
+
+
+Started GET "/administracion" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+Processing by AdministracionController#index as HTML
+  Rendered administracion/index.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 120ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-26 12:06:11 -0500
