@@ -1,6 +1,9 @@
 /* ============================
             Header
 // =========================== */
+.header-separator{
+  height: 96px;
+}
 header{
   background: white;
   position: fixed;
@@ -116,9 +119,10 @@ header .content{
 }
 
 .content-eps-landing{
-  padding-top: 107px;
+  // padding-top: 107px;
   background-image: asset-url('bg-eps.jpg');
   background-size: cover;
+  padding: 20px;
 
   .title{
     h2{
@@ -131,4 +135,41 @@ header .content{
       color: #FFF;
     }
   }
+}
+/* ============================
+            Servicios
+// =========================== */
+.our-solutions{
+  background: #FFFDF7;
+}
+
+.our-solutions-body, .our-solutions-header{
+  text-align: center;
+  padding: 60px;
+}
+
+.our-solutions-header{
+  padding-bottom: 0px;
+}
+
+.our-solutions-body .col-md-4{
+  margin-bottom: 40px;
+}
+
+.solutions-imges{
+  background: #A5E4FF;
+  border-radius: 50%;
+  width: 164px;
+  height: 163px;
+  display: inline-block;
+  position: relative;
+}
+
+.solutions-imges img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  margin: auto;
 }
