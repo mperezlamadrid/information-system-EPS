@@ -6259,3 +6259,127 @@ Processing by HomeController#index as HTML
   Rendered shared/_header.slim (0.7ms)
   Rendered home/index.html.slim within layouts/application (3.4ms)
 Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 13:06:44 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 13:06:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:44 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:44 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-01 13:06:45 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (0.6ms)
+  Rendered home/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 91ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-01 13:06:46 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-01 13:06:47 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (0.6ms)
+  Rendered home/about_us.html.slim within layouts/application (1.5ms)
+Completed 200 OK in 89ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/soluciones" for 127.0.0.1 at 2015-04-01 13:06:49 -0500
+Processing by HomeController#solutions as HTML
+  Rendered shared/_header.slim (0.6ms)
+  Rendered home/solutions.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)

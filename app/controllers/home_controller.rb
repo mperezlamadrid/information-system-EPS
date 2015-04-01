@@ -5,8 +5,10 @@ class HomeController < ApplicationController
 	end
 
 	def about_us
+		@title = 'Acerca de nosotros'
 	end
 
 	def solutions
+		@title = 'Soluciones'
 	end
 end
