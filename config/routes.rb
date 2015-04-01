@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   resources :atencion, only: :index
   resources :historial_clinico, only: :index
 
+  get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
+  get '/soluciones' => 'home#solutions', as: :solutions
+
   # Example resource route with options:
   #   resources :products do
   #     member do
