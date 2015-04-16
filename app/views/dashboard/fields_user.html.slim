@@ -4,13 +4,16 @@
       .panel-heading
         h4 Informacion del usuario
       .panel-body
+        .alert.alert-danger role="alert" ng-show="show_error"
+          span.sr-only Error:
+          | {{ message_error }}
         form
           .form-group
-            input.form-control ng-model="first_name" placeholder="Primer Nombre" type="text"
+            input.form-control ng-model="first_name" ng-required="true" placeholder="Primer Nombre" type="text"
           .form-group
-            input.form-control ng-model="last_name" placeholder="Primer Apellido" type="text"
+            input.form-control ng-model="last_name" ng-required="true" placeholder="Primer Apellido" type="text"
           .form-group
-            input.form-control ng-model="username" placeholder="Nombre de usuario" type="text"
+            input.form-control ng-model="username" ng-required="true" placeholder="Nombre de usuario" type="text"
           .form-group
             input.form-control ng-model="role" placeholder="Rol dentro de la empresa ej: Admin, Doctor, Asistencia" type="text"
           button.btn.btn-primary.pull-right type="submit" ng-click="createUser(first_name,last_name,username,role)"

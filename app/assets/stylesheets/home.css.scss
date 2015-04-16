@@ -119,10 +119,10 @@ header .content{
 }
 
 .content-eps-landing{
-  // padding-top: 107px;
   background-image: asset-url('bg-eps.jpg');
   background-size: cover;
   padding: 20px;
+  height: calc(100% - 96px);
 
   .title{
     h2{
