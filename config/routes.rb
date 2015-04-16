@@ -16,7 +16,12 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :administracion, only: :index
-  resources :dashboard, only: :index
+  resources :dashboard , only: [:index] do
+    collection do
+      get :fields_user
+      get :add_fields_user
+    end
+  end
   resources :atencion, only: :index
   resources :historial_clinico, only: :index
 

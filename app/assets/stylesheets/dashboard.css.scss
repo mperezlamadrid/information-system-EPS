@@ -6,3 +6,12 @@
 	width: 400px;
 	margin: 40px auto;
 }
+
+span.btn.btn-default.btn-danger.pull-left{
+	a{
+		color: white;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
