@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   resources :administracion, only: :index
+  resources :dashboard, only: :index
   resources :atencion, only: :index
   resources :historial_clinico, only: :index
 
