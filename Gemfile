@@ -31,6 +31,7 @@ gem "font-awesome-rails"
 # gem 'spring',        group: :development
 
 gem 'devise'
+gem 'devise-bootstrap-views'
 
 group :development, :test do
   gem 'fuubar'

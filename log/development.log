@@ -14001,3 +14001,1038 @@ Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:12:52 -0500
 
 
 Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:12:52 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (20.7ms)
+  Rendered dashboard/index.html.slim within layouts/application (66.6ms)
+Completed 200 OK in 431ms (Views: 396.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:43:38 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:43:54 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_header.slim (10.4ms)
+  Rendered dashboard/index.html.slim within layouts/application (12.0ms)
+Completed 200 OK in 119ms (Views: 116.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:43:55 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+Processing by DashboardController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (13.3ms)
+  Rendered dashboard/index.html.slim within layouts/application (15.0ms)
+Completed 200 OK in 151ms (Views: 148.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:44:11 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_header.slim (11.2ms)
+  Rendered dashboard/index.html.slim within layouts/application (13.1ms)
+Completed 200 OK in 123ms (Views: 120.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:44:35 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:45:29 -0500
+Processing by DashboardController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (14.0ms)
+  Rendered dashboard/index.html.slim within layouts/application (16.6ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:45:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:29 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:29 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:45:30 -0500
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:45:49 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_header.slim (14.6ms)
+  Rendered dashboard/index.html.slim within layouts/application (16.5ms)
+Completed 200 OK in 125ms (Views: 123.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:45:50 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:45:54 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 387ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 14:45:55 -0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:45:55 -0500
+Processing by DashboardController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (15.2ms)
+  Rendered dashboard/index.html.slim within layouts/application (35.9ms)
+Completed 200 OK in 132ms (Views: 130.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_header.slim (17.5ms)
+  Rendered dashboard/index.html.slim within layouts/application (20.6ms)
+Completed 200 OK in 124ms (Views: 121.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-16 14:53:16 -0500
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2015-04-16 14:53:19 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-16 14:53:19 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (8.0ms)
+  Rendered home/index.html.slim within layouts/application (14.3ms)
+Completed 200 OK in 144ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:53:21 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (58.7ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x007fd8fbfeebe8>:0x007fd8fbfed8b0>):
+    1: <%= bootstrap_devise_error_messages! %>
+    2: <div class="panel panel-default">
+    3:   <div class="panel-heading">
+    4:     <h4><%= t('.sign_up', :default => "Sign up") %></h4>
+  app/views/devise/registrations/new.html.erb:1:in `_app_views_devise_registrations_new_html_erb___3189111929477434322_70284958710040'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:53:21 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x007fd8fbfeebe8>:0x007fd8fbe3eca8>):
+    1: <%= bootstrap_devise_error_messages! %>
+    2: <div class="panel panel-default">
+    3:   <div class="panel-heading">
+    4:     <h4><%= t('.sign_up', :default => "Sign up") %></h4>
+  app/views/devise/registrations/new.html.erb:1:in `_app_views_devise_registrations_new_html_erb___3189111929477434322_70284958710040'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:53:39 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (77.8ms)
+Completed 200 OK in 176ms (Views: 173.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:53:40 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-16 14:53:46 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 148ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-04-16 14:53:52 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/passwords/new.html.erb within layouts/application (29.1ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x007fd8fc62a908>:0x007fd8fc629c88>):
+    1: <%= bootstrap_devise_error_messages! %>
+    2: <div class="panel panel-default">
+    3:   <div class="panel-heading">
+    4:     <h4><%= t('.forgot_your_password', :default => 'Forgot your password?') %></h4>
+  app/views/devise/passwords/new.html.erb:1:in `_app_views_devise_passwords_new_html_erb__600916382285407199_70284961989580'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-04-16 14:53:53 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/passwords/new.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `bootstrap_devise_error_messages!' for #<#<Class:0x007fd8fc62a908>:0x007fd902d6e628>):
+    1: <%= bootstrap_devise_error_messages! %>
+    2: <div class="panel panel-default">
+    3:   <div class="panel-heading">
+    4:     <h4><%= t('.forgot_your_password', :default => 'Forgot your password?') %></h4>
+  app/views/devise/passwords/new.html.erb:1:in `_app_views_devise_passwords_new_html_erb__600916382285407199_70285016131260'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.3ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-04-16 14:54:44 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:54:45 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-16 14:54:48 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:54:50 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:54:56 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:55:56 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:58:00 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:01 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:58:02 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 747ms (Views: 745.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:17 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-16 14:58:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:58:38 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:58:54 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 700ms (Views: 698.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:58:55 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered shared/_header.slim (2.6ms)
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 231ms (Views: 229.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:59:36 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 14:59:57 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 723ms (Views: 722.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 14:59:58 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 15:00:03 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered shared/_header.slim (2.1ms)
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 736ms (Views: 733.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 15:00:04 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-16 15:00:09 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-16 15:00:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 104ms (Views: 102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 109ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/historial_clinico.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/atencion.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/administracion.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-16 15:02:01 -0500
