@@ -31,6 +31,8 @@ Rails.application.routes.draw do
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions
+  get '/crear-usuario' => 'home#create_user', as: :create_user
+  get '/usuario-admin' => 'home#check_user_admin', as: :check_user_admin
 
   # Example resource route with options:
   #   resources :products do

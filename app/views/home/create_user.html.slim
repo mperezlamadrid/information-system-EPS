@@ -1,0 +1,24 @@
+= render partial: 'shared/header'
+.create-user ng-controller='UserController'
+  .container
+    .alert.alert-info
+      a.close data-dismiss="alert" href="#"  &times;
+      strong> Señor Administrador!
+      | Digite su email y contraseña de administrador para crear usuario.
+  .container_forms
+    .panel.panel-default
+      .panel-heading
+        h4 Informacion del Administrador
+      .panel-body
+        .alert.alert-danger role="alert" ng-show="show_error"
+          span.sr-only Error:
+          | {{ message_error }}
+        form
+          .form-group
+            input.form-control ng-model="email_admin" autofocus="true" ng-required="true" placeholder="Correo Electronico" type="email"
+          .form-group
+            input.form-control ng-model="password_admin" autofocus="true" ng-required="true" placeholder="Contraseña" type="password"
+          button.btn.btn-primary.pull-right type="submit" ng-click="useradmin(email_admin,password_admin)"
+            | Agregar
+          span.btn.btn-default.btn-danger.pull-left
+            = link_to("Cancelar", destroy_user_session_path, method: :delete)

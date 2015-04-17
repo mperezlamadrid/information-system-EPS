@@ -14,4 +14,17 @@ class HomeController < ApplicationController
 	def solutions
 		@title = 'Soluciones'
 	end
+
+	def create_user
+		@title = 'Crear Usuario'
+	end
+
+	def check_user_admin
+		@user = User.where(email: params[:email_admin]).first
+		if @user.present? && @user.role == "Administracion"
+			render json: { can_create: true }
+		else
+			render json: { can_create: false }
+		end
+	end
 end
