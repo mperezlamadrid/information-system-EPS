@@ -1,7 +1,6 @@
-class AdministracionController < ApplicationController
-
+class SiauController < ApplicationController
 	def index
-		@title = 'Administracion'
+		@title = 'SIAU'
 		if current_user.first_name == ""
       redirect_to fields_user_dashboard_index_path
     else

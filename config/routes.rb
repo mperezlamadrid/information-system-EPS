@@ -24,6 +24,10 @@ Rails.application.routes.draw do
   end
   resources :atencion, only: :index
   resources :historial_clinico, only: :index
+  resources :siau, only: :index
+  resources :enfermeria, only: :index
+  resources :medico_general, only: :index
+  resources :medico_especialista, only: :index
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions

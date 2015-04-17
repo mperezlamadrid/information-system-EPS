@@ -1,7 +1,6 @@
-class AdministracionController < ApplicationController
-
+class MedicoEspecialistaController < ApplicationController
 	def index
-		@title = 'Administracion'
+		@title = 'Medicina Especializada'
 		if current_user.first_name == ""
       redirect_to fields_user_dashboard_index_path
     else
