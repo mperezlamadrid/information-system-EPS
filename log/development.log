@@ -58968,3 +58968,3341 @@ Processing by HomeController#index as HTML
   Rendered shared/_header.slim (0.7ms)
   Rendered home/index.html.slim within layouts/application (1.6ms)
 Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 16:55:01 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/create_user.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 152ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:29 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/create_user.html.slim within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (couldn't find file 'controllers'
+  (in /Users/manuelperez/Projects/system-EPS-MAJJ/app/assets/javascripts/application.js:18)):
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    11:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    12:   <%= favicon_link_tag 'favicon.png' %>
+    13:   <!-- <%= csrf_meta_tags %> -->
+    14: </head>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3931933029999837728_70309242770480'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.1ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:33 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.4ms)
+  Rendered home/create_user.html.slim within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (couldn't find file 'controllers/'
+  (in /Users/manuelperez/Projects/system-EPS-MAJJ/app/assets/javascripts/application.js:18)):
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     9: 
+    10:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    11:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    12:   <%= favicon_link_tag 'favicon.png' %>
+    13:   <!-- <%= csrf_meta_tags %> -->
+    14: </head>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3931933029999837728_70309242770480'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:37 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.7ms)
+  Rendered home/create_user.html.slim within layouts/application (2.9ms)
+Completed 200 OK in 247ms (Views: 246.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:09:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:09:40 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/index.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 140ms (Views: 139.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:09:40 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:41 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/create_user.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 132ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/create_user.html.slim within layouts/application (1.9ms)
+Completed 200 OK in 201ms (Views: 200.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:09:47 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:09:48 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:09:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:09:49 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (0.8ms)
+  Rendered home/index.html.slim within layouts/application (1.8ms)
+Completed 200 OK in 157ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:09:49 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:50 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/create_user.html.slim within layouts/application (2.1ms)
+Completed 200 OK in 148ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:09:51 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/index.html.slim within layouts/application (2.4ms)
+Completed 200 OK in 162ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:09:56 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/create_user.html.slim within layouts/application (1.9ms)
+Completed 200 OK in 144ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:10:10 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/create_user.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 232ms (Views: 231.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:10:21 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:10:23 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (0.8ms)
+  Rendered home/index.html.slim within layouts/application (1.7ms)
+Completed 200 OK in 156ms (Views: 155.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:10:23 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:10:28 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/create_user.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 143ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (9.5ms)
+  Rendered home/create_user.html.slim within layouts/application (10.5ms)
+Completed 200 OK in 193ms (Views: 191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:15:17 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:15:18 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:15:19 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (9.7ms)
+  Rendered home/index.html.slim within layouts/application (10.8ms)
+Completed 200 OK in 175ms (Views: 174.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:15:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/index.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 153ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:15:20 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.6ms)
+  Rendered home/create_user.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 205ms (Views: 203.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:15:21 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:15:28 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/about_us.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 185ms (Views: 184.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:16:37 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.6ms)
+  Rendered home/about_us.html.slim within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 18ms
+
+SyntaxError (/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+... de nosotros", about_us_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+...t_us_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+..."Soluciones", solutions_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+...ions_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^):
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: Can't assign to true
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: Can't assign to true
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+  app/views/home/about_us.html.slim:1:in `_app_views_home_about_us_html_slim__3341577345078969721_70309281501280'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:16:48 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.6ms)
+  Rendered home/about_us.html.slim within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+... de nosotros", about_us_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+...t_us_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+..."Soluciones", solutions_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+...ions_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^):
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: Can't assign to true
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: Can't assign to true
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+  app/views/home/about_us.html.slim:1:in `_app_views_home_about_us_html_slim__3341577345078969721_70309281501280'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:16:49 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (8.7ms)
+  Rendered home/about_us.html.slim within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+... de nosotros", about_us_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+...t_us_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+..."Soluciones", solutions_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+...ions_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^):
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:13: Can't assign to true
+  app/views/shared/_header.slim:13: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:13: syntax error, unexpected ')', expecting keyword_end
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: Can't assign to true
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+  app/views/home/about_us.html.slim:1:in `_app_views_home_about_us_html_slim__3341577345078969721_70309281501280'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:07 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.5ms)
+  Rendered home/about_us.html.slim within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+..."Soluciones", solutions_path, , target: 'blank')), true, "\n...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+...ions_path, , target: 'blank')), true, "\n                ", ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: Can't assign to true
+...ath, , target: 'blank')), true, "\n                ", _templ...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+...)), true, "\n                ", _temple_html_pretty1)))).to_...
+...                               ^
+/Users/manuelperez/Projects/system-EPS-MAJJ/app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+..._temple_html_pretty1)))).to_s)); 
+...                               ^):
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting ')'
+  app/views/shared/_header.slim:16: Can't assign to true
+  app/views/shared/_header.slim:16: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/shared/_header.slim:16: syntax error, unexpected ')', expecting keyword_end
+  app/views/home/about_us.html.slim:1:in `_app_views_home_about_us_html_slim__3341577345078969721_70309281501280'
+
+
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/manuelperez/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.7ms)
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (7.9ms)
+  Rendered home/about_us.html.slim within layouts/application (8.7ms)
+Completed 200 OK in 165ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:17:13 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.8ms)
+  Rendered home/about_us.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 164ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:17:20 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (8.9ms)
+  Rendered home/about_us.html.slim within layouts/application (9.8ms)
+Completed 200 OK in 183ms (Views: 182.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:17:27 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.4ms)
+  Rendered home/about_us.html.slim within layouts/application (11.3ms)
+Completed 200 OK in 188ms (Views: 187.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:17:33 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (12.6ms)
+  Rendered home/about_us.html.slim within layouts/application (13.8ms)
+Completed 200 OK in 193ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:17:40 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:17:41 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/about_us.html.slim within layouts/application (1.8ms)
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:21:02 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (3.9ms)
+  Rendered home/about_us.html.slim within layouts/application (7.0ms)
+Completed 200 OK in 278ms (Views: 275.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:04 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/about_us.html.slim within layouts/application (1.7ms)
+Completed 200 OK in 151ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:07 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:09 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.2ms)
+  Rendered home/about_us.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 153ms (Views: 152.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (7.9ms)
+  Rendered home/index.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 162ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:21:10 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.4ms)
+  Rendered home/about_us.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:12 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (15.5ms)
+  Rendered home/about_us.html.slim within layouts/application (16.7ms)
+Completed 200 OK in 175ms (Views: 174.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:21:23 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (11.1ms)
+  Rendered home/about_us.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 168ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:21:32 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (8.6ms)
+  Rendered home/about_us.html.slim within layouts/application (10.0ms)
+Completed 200 OK in 188ms (Views: 187.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:21:37 -0500
+
+
+Started GET "/soluciones" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+Processing by HomeController#solutions as HTML
+  Rendered shared/_header.slim (1.2ms)
+  Rendered home/solutions.html.slim within layouts/application (2.2ms)
+Completed 200 OK in 200ms (Views: 199.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:38 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:39 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.5ms)
+  Rendered home/about_us.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 150ms (Views: 148.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:40 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:21:47 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.4ms)
+  Rendered home/about_us.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 145ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:21:48 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/create_user.html.slim within layouts/application (1.9ms)
+Completed 200 OK in 186ms (Views: 185.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:49 -0500
+
+
+Started GET "/soluciones" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+Processing by HomeController#solutions as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/solutions.html.slim within layouts/application (1.9ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:53 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/create_user.html.slim within layouts/application (2.1ms)
+Completed 200 OK in 152ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:56 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/create_user.html.slim within layouts/application (1.8ms)
+Completed 200 OK in 160ms (Views: 159.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.7ms)
+  Rendered home/create_user.html.slim within layouts/application (3.1ms)
+Completed 200 OK in 165ms (Views: 164.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:58 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:21:59 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.2ms)
+  Rendered home/about_us.html.slim within layouts/application (2.8ms)
+Completed 200 OK in 156ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 17:22:02 -0500
+Processing by HomeController#index as HTML
+  Rendered shared/_header.slim (9.3ms)
+  Rendered home/index.html.slim within layouts/application (10.3ms)
+Completed 200 OK in 161ms (Views: 159.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-04-17 17:22:02 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.4ms)
+  Rendered home/create_user.html.slim within layouts/application (3.5ms)
+Completed 200 OK in 160ms (Views: 159.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:04 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (2.1ms)
+  Rendered home/create_user.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 160ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:06 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/about_us.html.slim within layouts/application (2.0ms)
+Completed 200 OK in 152ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:11 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:22:12 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:22:18 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (10.7ms)
+  Rendered home/about_us.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 165ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:22:19 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:22:24 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.7ms)
+  Rendered home/create_user.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 229ms (Views: 228.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:25 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (0.9ms)
+  Rendered home/create_user.html.slim within layouts/application (1.8ms)
+Completed 200 OK in 165ms (Views: 163.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:26 -0500
+
+
+Started GET "/acerca-de-nosotros" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+Processing by HomeController#about_us as HTML
+  Rendered shared/_header.slim (1.0ms)
+  Rendered home/about_us.html.slim within layouts/application (2.1ms)
+Completed 200 OK in 148ms (Views: 147.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:22:29 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.7ms)
+  Rendered home/create_user.html.slim within layouts/application (2.9ms)
+Completed 200 OK in 190ms (Views: 188.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:22:34 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.1ms)
+  Rendered home/create_user.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 156ms (Views: 155.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-04-17 17:23:28 -0500
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2015-04-17 17:23:28 -0500

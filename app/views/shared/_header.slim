@@ -10,9 +10,9 @@ header
 						a href="" Nuestra EPS
 						ul.sub-menu
 							li
-								a href=about_us_path Acerca de nosotros
+								= link_to("Acerca de nosotros", about_us_path, target: 'blank')
 							li
-								a href=solutions_path Soluciones
+								= link_to("Soluciones", solutions_path, target: 'blank')
 							li
 								a href="mailto:eps.majj@gmail.com" Contactanos
 					-if user_signed_in?
@@ -28,7 +28,7 @@ header
 									= "#{current_user.first_name} #{current_user.last_name}"
 					-else
 						li
-							= link_to("Crear Usuario", create_user_path, :class => 'navbar-link')
+							= link_to("Crear Usuario", create_user_path, :class => 'navbar-link', target: 'blank')
 							/ = link_to("Crear Usuario", new_user_registration_path, :class => 'navbar-link')
 						li.login-button
 							= link_to("Login", new_user_session_path, :class => 'navbar-link')
