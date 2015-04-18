@@ -1,0 +1,42 @@
+.solutions{
+	padding: 40px;
+
+	.title-page{
+		text-align: center;
+	}
+
+	.body-page{
+		margin: 40px 0;
+	}
+
+	.footer-page{
+		margin-top: 30px;
+
+		.column-about:first-child{
+			margin-top: 0;
+		}
+
+		.column-about{
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			margin: 20px;
+
+			.image-about{
+				width: 600px;
+				height: 350px;
+			  border: 5px solid black;
+			  margin: 0 auto;
+
+				img{
+					width: 100%;
+					height: 100%
+				}
+			}
+
+			.text-about{
+				margin-top: 20px;
+			}
+		}
+	}
+}
