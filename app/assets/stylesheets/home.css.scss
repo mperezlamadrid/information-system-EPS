@@ -1,6 +1,16 @@
 /* ============================
             Header
 // =========================== */
+body{
+  background: #e4f5fc; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #e4f5fc 28%, #2ab0ed 99%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(28%,#e4f5fc), color-stop(99%,#2ab0ed)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #e4f5fc 28%,#2ab0ed 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #e4f5fc 28%,#2ab0ed 99%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #e4f5fc 28%,#2ab0ed 99%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #e4f5fc 28%,#2ab0ed 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .header-separator{
   height: 96px;
 }
@@ -193,7 +203,7 @@ header .content{
 
 .create-user{
 
-  .alert.alert-info{
+  .alert.alert-warning{
     margin-top: 40px;
   }
 }

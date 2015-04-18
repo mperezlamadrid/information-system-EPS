@@ -1,14 +1,14 @@
 = render partial: 'shared/header'
 .create-user ng-controller='UserController'
   .container
-    .alert.alert-info
+    .alert.alert-warning
       a.close data-dismiss="alert" href="#"  &times;
       strong> Señor Administrador!
       | Digite su email y contraseña de administrador para crear usuario.
   .container_forms
     .panel.panel-default
       .panel-heading
-        h4 Informacion del Administrador
+        h4 Verificacion del Administrador
       .panel-body
         .alert.alert-danger role="alert" ng-show="show_error"
           span.sr-only Error:
