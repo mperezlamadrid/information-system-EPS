@@ -1,0 +1,19 @@
+.footer class=""
+  .container
+    .row
+      .pull-left
+        .footer-details
+          ul.list-inline.text-center.links
+            li
+              = link_to("Acerca de nosotros", about_us_path, target: 'blank')
+            li="|"
+            li
+              = link_to("Soluciones", solutions_path, target: 'blank')
+            li="|"
+            li
+              a href="mailto:eps.majj@gmail.com" Contactanos
+          .copyright.text-center.public-show-block
+            | &copy 2015 EPS MAJJ. All rights reserved.
+
+      .pull-right
+        = image_tag("logo.png", alt: "logo")
