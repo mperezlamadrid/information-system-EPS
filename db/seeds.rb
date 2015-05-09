@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+speciality_csv_text = File.read("#{Rails.root}/config/data/specialities.csv")
+speciality_csv = CSV.parse(speciality_csv_text, headers: false)
+if Speciality.count == 0
+	speciality_csv.each do |row|
+		Speciality.create!(
+			name: row[0],
+			descripcion: row[1],
+			status: row[2])
+	end
+end

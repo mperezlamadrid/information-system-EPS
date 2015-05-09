@@ -15,9 +15,16 @@
           .form-group
             input.form-control ng-model="username" ng-required="true" placeholder="Nombre de usuario" type="text"
           .form-group
-            select.selectpicker.form-control ng-model="role" ng-options="role.name for role in roles" title='Rol dentro de la empresa' selectpicker=""
+            select.selectpicker.form-control ng-model="role" ng-options="role.name for role in roles" ng-change="checkRole(role)" title='Rol dentro de la empresa' selectpicker=""
               option value="" ng-if="false"
-          button.btn.btn-primary.pull-right type="submit" ng-click="createUser(first_name,last_name,username,role)"
+          .form-group ng-show="showPassAdmin"
+            input.form-control ng-model="passAdmin" placeholder="Contraseña de Administracion" type="text"
+          .form-group ng-show="showFieldsMedico"
+            input.form-control ng-model="proCard" placeholder="Tarjeta Profesional" type="text"
+          .form-group ng-show="showFieldsMedico"
+            select.selectpicker.form-control ng-model="defaultSpeciality" ng-options="speciality.name for speciality in specialities" title='Especialidad' selectpicker=""
+              option value="" ng-if="false"
+          button.btn.btn-primary.pull-right type="submit" ng-click="createUser(first_name,last_name,username,role,passAdmin,proCard,defaultSpeciality)"
             | Agregar
           span.btn.btn-default.btn-danger.pull-left
             = link_to("Cancelar", destroy_user_session_path, method: :delete)

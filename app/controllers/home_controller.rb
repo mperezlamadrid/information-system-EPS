@@ -21,7 +21,7 @@ class HomeController < ApplicationController
 
 	def check_user_admin
 		@user = User.where(email: params[:email_admin]).first
-		if @user.present? && @user.role == "Administracion"
+		if @user.present? && @user.role == "Administracion" && @user.pass_admin == params[:pass]
 			render json: { can_create: true }
 		else
 			render json: { can_create: false }

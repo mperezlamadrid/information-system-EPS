@@ -7,9 +7,9 @@ class DashboardController < ApplicationController
   	else
   		if current_user.role == "Administracion"
   			redirect_to administracion_index_path
-  		elsif current_user.role == "Medico General"
+  		elsif current_user.role == "Medico" && current_user.specialty == "General"
   			redirect_to medico_general_index_path
-			elsif current_user.role == "Medico Especialista"
+			elsif current_user.role == "Medico" && current_user.specialty != "General"
 				redirect_to medico_especialista_path
       elsif current_user.role == "Enfermeria"
         redirect_to enfermeria_path
@@ -32,10 +32,13 @@ class DashboardController < ApplicationController
   		first_name: params[:first_name],
   		last_name: params[:last_name],
   		username: params[:username],
-  		role: params[:role]
+  		role: params[:role],
+      pass_admin: params[:pass_admin],
+      pro_card: params[:pro_card],
+      specialty: params[:speciality]
   	)
   	@current_user.save
-  	# render json: {}, status: :ok
+  	render json: {}, status: :ok
   end
 
   private

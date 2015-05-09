@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   resources :enfermeria, only: :index
   resources :medico_general, only: :index
   resources :medico_especialista, only: :index
+  resources :specialities, only: :index
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions
