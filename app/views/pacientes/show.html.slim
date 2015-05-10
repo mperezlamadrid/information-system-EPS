@@ -1,44 +1,36 @@
-p#notice = notice
-
-p
-  strong Tipo documento:
-  = @paciente.tipo_documento
-p
-  strong Documento:
-  = @paciente.documento
-p
-  strong Pri nombre:
-  = @paciente.pri_nombre
-p
-  strong Seg nombre:
-  = @paciente.seg_nombre
-p
-  strong Pri apellido:
-  = @paciente.pri_apellido
-p
-  strong Seg apellido:
-  = @paciente.seg_apellido
-p
-  strong Nacimiento:
-  = @paciente.nacimiento
-p
-  strong Genero:
-  = @paciente.genero
-p
-  strong Direccion:
-  = @paciente.direccion
-p
-  strong Telefono:
-  = @paciente.telefono
-p
-  strong Regimen:
-  = @paciente.regimen
-p
-  strong Num ficha sisben:
-  = @paciente.num_ficha_sisben
-p
-  strong Estado:
-  = @paciente.estado
+= render partial: 'shared/header'
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@paciente.pri_nombre} #{@paciente.seg_nombre} #{@paciente.pri_apellido} #{@paciente.seg_apellido}
+      .intro-heading-contact
+        p
+          strong Tipo documento:
+          = @paciente.tipo_documento
+        p
+          strong Documento:
+          = @paciente.documento
+        p
+          strong Nacimiento:
+          = @paciente.nacimiento
+        p
+          strong Genero:
+          = @paciente.genero
+        p
+          strong Direccion:
+          = @paciente.direccion
+        p
+          strong Telefono:
+          = @paciente.telefono
+        p
+          strong Regimen:
+          = @paciente.regimen
+        p
+          strong Num ficha sisben:
+          = @paciente.num_ficha_sisben
+        p
+          strong Estado:
+          = @paciente.estado
 
 = link_to 'Edit', edit_paciente_path(@paciente)
 '|

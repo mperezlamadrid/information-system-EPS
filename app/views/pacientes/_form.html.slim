@@ -6,43 +6,51 @@
         - @paciente.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :tipo_documento
-    = f.text_field :tipo_documento
-  .field
-    = f.label :documento
-    = f.text_field :documento
-  .field
-    = f.label :pri_nombre
-    = f.text_field :pri_nombre
-  .field
-    = f.label :seg_nombre
-    = f.text_field :seg_nombre
-  .field
-    = f.label :pri_apellido
-    = f.text_field :pri_apellido
-  .field
-    = f.label :seg_apellido
-    = f.text_field :seg_apellido
-  .field
-    = f.label :nacimiento
-    = f.date_select :nacimiento
-  .field
-    = f.label :genero
-    = f.text_field :genero
-  .field
-    = f.label :direccion
-    = f.text_field :direccion
-  .field
-    = f.label :telefono
-    = f.text_field :telefono
-  .field
-    = f.label :regimen
-    = f.text_field :regimen
-  .field
-    = f.label :num_ficha_sisben
-    = f.text_field :num_ficha_sisben
-  .field
-    = f.label :estado
-    = f.text_field :estado
-  .actions = f.submit
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Paciente
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :tipo_documento
+              = f.text_field :tipo_documento, class: "form-control"
+            .field.form-group
+              = f.label :Documento
+              = f.text_field :documento, class: "form-control"
+            .field.form-group
+              = f.label :Primer_nombre
+              = f.text_field :pri_nombre, class: "form-control"
+            .field.form-group
+              = f.label :Segundo_nombre
+              = f.text_field :seg_nombre, class: "form-control"
+            .field.form-group
+              = f.label :Primer_apellido
+              = f.text_field :pri_apellido, class: "form-control"
+            .field.form-group
+              = f.label :Segundo_apellido
+              = f.text_field :seg_apellido, class: "form-control"
+            .field.form-group
+              = f.label :Feche_de_Nacimiento
+              = f.date_select :nacimiento, class: "form-control"
+            .field.form-group
+              = f.label :Genero
+              = f.text_field :genero, class: "form-control"
+            .field.form-group
+              = f.label :Direccion
+              = f.text_field :direccion, class: "form-control"
+            .field.form-group
+              = f.label :Telefono
+              = f.text_field :telefono, class: "form-control"
+            .field.form-group
+              = f.label :Regimen
+              = f.text_field :regimen, class: "form-control"
+            .field.form-group
+              = f.label :Numero_de_ficha_del_sisben
+              = f.text_field :num_ficha_sisben, class: "form-control"
+            .field.form-group
+              = f.label :Estado
+              = f.text_field :estado, class: "form-control"
+            .sign-button
+              = f.submit
