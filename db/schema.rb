@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20150510143912) do
   create_table "convenios", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "nombre"
-    t.string   "descripcion"
-    t.string   "estado"
+    t.string   "name"
+    t.string   "description"
+    t.string   "status"
   end
 
   create_table "pacientes", force: true do |t|
