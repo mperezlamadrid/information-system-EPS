@@ -1,14 +1,14 @@
 .contact-show
   .content-contact-show
     .intro-text-contact
-      .intro-lead-in-contact #{@speciality.nombre}
+      .intro-lead-in-contact #{@speciality.name}
       .intro-heading-contact
       	p
-          strong Nombre:
+          strong Descripcion:
           = @speciality.descripcion
         p
           strong Estado:
-          = @speciality.estado
+          = @speciality.status
 
 = link_to 'Edit', edit_speciality_path(@speciality)
 '|
