@@ -1,0 +1,25 @@
+= form_for @servicio do |f|
+  - if @servicio.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@servicio.errors.count, "error")} prohibited this servicio from being saved:"
+      ul
+        - @servicio.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Paciente
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :nombre
+              = f.text_field :nombre, class: "form-control"
+            .field.form-group
+              = f.label :descripcion
+              = f.text_field :descripcion, class: "form-control"
+            .field.form-group
+              = f.label :estado
+              = f.text_field :estado, class: "form-control"
+            .sign-button = f.submit

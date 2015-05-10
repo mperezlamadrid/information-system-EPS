@@ -1,0 +1,15 @@
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@servicio.nombre}
+      .intro-heading-contact
+      	p
+          strong Tipo documento:
+          = @servicio.descripcion
+        p
+          strong Documento:
+          = @servicio.estado
+
+= link_to 'Edit', edit_servicio_path(@servicio)
+'|
+= link_to 'Back', servicios_path
