@@ -11,10 +11,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150509135745) do
+ActiveRecord::Schema.define(version: 20150510004509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "convenios", force: true do |t|
+    t.string   "nombre"
+    t.string   "descripcion"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pacientes", force: true do |t|
+    t.string   "tipo_documento"
+    t.string   "documento"
+    t.string   "pri_nombre"
+    t.string   "seg_nombre"
+    t.string   "pri_apellido"
+    t.string   "seg_apellido"
+    t.date     "nacimiento"
+    t.string   "genero"
+    t.string   "direccion"
+    t.string   "telefono"
+    t.string   "regimen"
+    t.string   "num_ficha_sisben"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "servicios", force: true do |t|
+    t.string   "nombre"
+    t.string   "descripcion"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "specialities", force: true do |t|
     t.string   "name"

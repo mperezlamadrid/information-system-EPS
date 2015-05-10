@@ -1,0 +1,45 @@
+p#notice = notice
+
+p
+  strong Tipo documento:
+  = @paciente.tipo_documento
+p
+  strong Documento:
+  = @paciente.documento
+p
+  strong Pri nombre:
+  = @paciente.pri_nombre
+p
+  strong Seg nombre:
+  = @paciente.seg_nombre
+p
+  strong Pri apellido:
+  = @paciente.pri_apellido
+p
+  strong Seg apellido:
+  = @paciente.seg_apellido
+p
+  strong Nacimiento:
+  = @paciente.nacimiento
+p
+  strong Genero:
+  = @paciente.genero
+p
+  strong Direccion:
+  = @paciente.direccion
+p
+  strong Telefono:
+  = @paciente.telefono
+p
+  strong Regimen:
+  = @paciente.regimen
+p
+  strong Num ficha sisben:
+  = @paciente.num_ficha_sisben
+p
+  strong Estado:
+  = @paciente.estado
+
+= link_to 'Edit', edit_paciente_path(@paciente)
+'|
+= link_to 'Back', pacientes_path

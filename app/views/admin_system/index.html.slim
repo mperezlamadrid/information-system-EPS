@@ -1,1 +1,20 @@
-h1 Administracion del sistema
+.content-eps-landing-dash
+	.title
+		.container
+			h2  Administracion del sistema
+
+.about-us
+	.container
+		ul.list-group
+		  li.list-group-item.col-md-6
+		  	= link_to new_paciente_path
+		  		spsn	Agregar Paciente
+		  li.list-group-item.col-md-6
+		  	= link_to admin_system_index_path
+		  		span Agregar Especialidad
+		  li.list-group-item.col-md-6
+		  	= link_to admin_system_index_path
+		  		span Agregar Cita
+			li.list-group-item.col-md-6
+				= link_to admin_system_index_path
+					span Agregar Cita

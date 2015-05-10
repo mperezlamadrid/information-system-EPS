@@ -78811,3 +78811,958 @@ Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-05-09 13:46:00 -0500
   [1m[35m (0.4ms)[0m  COMMIT
   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
   [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePacientes (20150510002234)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.6ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510002234"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConvenios (20150510002513)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (5.2ms)[0m  [1mCREATE TABLE "convenios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510002513"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateServicios (20150510003100)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "servicios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510003100"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateServicios (20150510003100)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (50.4ms)[0m  DROP TABLE "servicios"
+  [1m[36mSQL (1.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150510003100'[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateConvenios (20150510002513)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.5ms)[0m  DROP TABLE "convenios"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150510002513'[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateConvenios (20150510002513)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "convenios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510002513"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateServicios (20150510003100)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (8.2ms)[0m  [1mCREATE TABLE "servicios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510003100"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePacientes (20150510004509)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "pacientes" already exists
+: CREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePacientes (20150510004509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+PG::DuplicateTable: ERROR:  relation "pacientes" already exists
+: CREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150416171734)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (8.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying(255) DEFAULT '' NOT NULL, "last_name" character varying(255) DEFAULT '' NOT NULL, "username" character varying(255) DEFAULT '' NOT NULL, "role" character varying(255) DEFAULT '' NOT NULL, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150416171734"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddSpecialityToUsers (20150509134657)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD COLUMN "specialty" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "pro_card" character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "pass_admin" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509134657"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSpecialities (20150509135745)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "specialities" ("id" serial primary key, "name" character varying(255), "descripcion" character varying(255), "status" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509135745"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConvenios (20150510002513)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.5ms)[0m  [1mCREATE TABLE "convenios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510002513"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateServicios (20150510003100)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "servicios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510003100"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePacientes (20150510004509)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510004509"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "specialities"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 00:52:06.605349"], ["descripcion", "Atencion de primer nivel"], ["name", "General"], ["status", "activo"], ["updated_at", "2015-05-10 00:52:06.605349"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-05-10 00:52:06.611166"], ["descripcion", "Se da en atencion de primer y segundo nivel"], ["name", "Fisioterapia"], ["status", "activo"], ["updated_at", "2015-05-10 00:52:06.611166"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 00:52:06.613078"], ["descripcion", "Atencion ginecostetrica"], ["name", "Ginecologo"], ["status", "activo"], ["updated_at", "2015-05-10 00:52:06.613078"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin_system" for 127.0.0.1 at 2015-05-09 19:52:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdminSystemController#index as HTML
+  Rendered admin_system/index.html.slim within layouts/application (25.5ms)
+Completed 200 OK in 857ms (Views: 821.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-09 19:52:45 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (29.1ms)
+  Rendered shared/_footer.slim (7.8ms)
+  Rendered home/index.html.slim within layouts/application (88.5ms)
+Completed 200 OK in 369ms (Views: 289.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/assets/bg-eps.jpg" for 127.0.0.1 at 2015-05-09 19:52:46 -0500
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (1.3ms)
+  Rendered home/create_user.html.slim within layouts/application (19.0ms)
+Completed 200 OK in 211ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-05-09 19:52:50 -0500
+
+
+Started GET "/specialities" for 127.0.0.1 at 2015-05-09 19:52:51 -0500
+Processing by SpecialitiesController#index as HTML
+  [1m[36mSpeciality Load (1.2ms)[0m  [1mSELECT "specialities".* FROM "specialities"[0m
+  Rendered specialities/index.jbuilder (35.4ms)
+Completed 200 OK in 95ms (Views: 86.3ms | ActiveRecord: 5.1ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+
+
+Started GET "/crear-usuario" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+Processing by HomeController#create_user as HTML
+  Rendered shared/_header.slim (2.3ms)
+  Rendered home/create_user.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 192ms (Views: 191.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+
+
+Started GET "/specialities" for 127.0.0.1 at 2015-05-09 19:54:00 -0500
+Processing by SpecialitiesController#index as HTML
+  [1m[35mSpeciality Load (0.5ms)[0m  SELECT "specialities".* FROM "specialities"
+  Rendered specialities/index.jbuilder (1.9ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/usuario-admin?email_admin=manuperez0993@gmail.com&pass=12345" for 127.0.0.1 at 2015-05-09 19:54:16 -0500
+Processing by HomeController#check_user_admin as HTML
+  Parameters: {"email_admin"=>"manuperez0993@gmail.com", "pass"=>"12345"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/usuario-admin?email_admin=manuperez0993@gmail.com&pass=12345" for 127.0.0.1 at 2015-05-09 19:54:41 -0500
+Processing by HomeController#check_user_admin as HTML
+  Parameters: {"email_admin"=>"manuperez0993@gmail.com", "pass"=>"12345"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-05-09 19:55:31 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered shared/_header.slim (1.4ms)
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (530.7ms)
+Completed 200 OK in 692ms (Views: 686.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:32 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:33 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:33 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:33 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-05-09 19:55:33 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2015-05-09 19:55:57 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EEWvi+8m7IsSgThfo18ippfa1oR5iCwTJhEcXZeMubo=", "user"=>{"email"=>"manuperez0993@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'manuperez0993@gmail.com' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2015-05-10 00:55:57.975758"], ["email", "manuperez0993@gmail.com"], ["encrypted_password", "$2a$10$kSc1uGnNsuQyTdu8vTKbf.Huab8.61U32AnVSAxNBiT6OQ0hhfrCG"], ["updated_at", "2015-05-10 00:55:57.975758"]]
+  [1m[35m (11.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1  [["current_sign_in_at", "2015-05-10 00:55:57.993132"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2015-05-10 00:55:57.993132"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-05-10 00:55:57.994387"]]
+  [1m[36m (14.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 149ms (ActiveRecord: 28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard/fields_user
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard/fields_user" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+Processing by DashboardController#fields_user as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered dashboard/fields_user.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 191ms (Views: 188.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:55:58 -0500
+
+
+Started GET "/specialities" for 127.0.0.1 at 2015-05-09 19:55:59 -0500
+Processing by SpecialitiesController#index as HTML
+  [1m[36mSpeciality Load (0.4ms)[0m  [1mSELECT "specialities".* FROM "specialities"[0m
+  Rendered specialities/index.jbuilder (1.7ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard/add_fields_user?first_name=Manuel&last_name=Perez&username=mperez1&role=Administracion&pass_admin=mplamadrid1!&pro_card=undefined&speciality=General" for 127.0.0.1 at 2015-05-09 19:56:25 -0500
+Processing by DashboardController#add_fields_user as HTML
+  Parameters: {"first_name"=>"Manuel", "last_name"=>"Perez", "username"=>"mperez1", "role"=>"Administracion", "pass_admin"=>"mplamadrid1!", "pro_card"=>"undefined", "speciality"=>"General"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "first_name" = $1, "last_name" = $2, "pass_admin" = $3, "pro_card" = $4, "role" = $5, "specialty" = $6, "updated_at" = $7, "username" = $8 WHERE "users"."id" = 1[0m  [["first_name", "Manuel"], ["last_name", "Perez"], ["pass_admin", "mplamadrid1!"], ["pro_card", "undefined"], ["role", "Administracion"], ["specialty", "General"], ["updated_at", "2015-05-10 00:56:25.778620"], ["username", "mperez1"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/dashboard/fields_user" for 127.0.0.1 at 2015-05-09 19:56:25 -0500
+Processing by DashboardController#fields_user as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-09 19:56:25 -0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-05-09 19:56:25 -0500
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/administracion
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/administracion" for 127.0.0.1 at 2015-05-09 19:56:25 -0500
+Processing by AdministracionController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered shared/_header.slim (0.8ms)
+  Rendered administracion/index.html.slim within layouts/application (58.2ms)
+Completed 200 OK in 234ms (Views: 231.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/admin.png" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/attention.png" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/clinic.png" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/receptionist.png" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:56:26 -0500
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+
+
+Started GET "/admin_system" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+Processing by AdminSystemController#index as HTML
+  Rendered admin_system/index.html.slim within layouts/application (0.8ms)
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:13 -0500
+
+
+Started GET "/pacientes/new" for 127.0.0.1 at 2015-05-09 19:57:15 -0500
+Processing by PacientesController#new as HTML
+  Rendered pacientes/_form.html.slim (51.4ms)
+  Rendered pacientes/new.html.slim within layouts/application (56.3ms)
+Completed 200 OK in 245ms (Views: 197.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin_system" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+Processing by AdminSystemController#index as HTML
+  Rendered admin_system/index.html.slim within layouts/application (1.1ms)
+Completed 200 OK in 189ms (Views: 188.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/angular-bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/bootstrap-select.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/controllers/tool.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 19:57:39 -0500
