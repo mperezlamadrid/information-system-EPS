@@ -8,9 +8,9 @@ class DashboardController < ApplicationController
     	else
     		if current_user.role == "Administracion"
     			redirect_to administracion_index_path
-    		elsif current_user.role == "Medico" && current_user.specialty == "General"
+    		elsif current_user.role == "Medico" && current_user.specialty == "MEDICINA GENERAL"
     			redirect_to medico_general_index_path
-  			elsif current_user.role == "Medico" && current_user.specialty != "General"
+  			elsif current_user.role == "Medico" && current_user.specialty != "MEDICINA GENERAL"
   				redirect_to medico_especialista_path
         elsif current_user.role == "Enfermeria"
           redirect_to enfermeria_path
