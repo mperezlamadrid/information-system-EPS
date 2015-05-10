@@ -87184,3 +87184,21 @@ Started GET "/assets/controllers/user_data.js?body=1" for 127.0.0.1 at 2015-05-0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-09 21:03:33 -0500
+  [1m[36mConvenio Load (26.3ms)[0m  [1mSELECT  "convenios".* FROM "convenios"   ORDER BY "convenios"."id" DESC LIMIT 1[0m
+  [1m[35mPaciente Load (0.7ms)[0m  SELECT  "pacientes".* FROM "pacientes"   ORDER BY "pacientes"."id" DESC LIMIT 1
+  [1m[36mPaciente Load (0.6ms)[0m  [1mSELECT "pacientes".* FROM "pacientes"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "pacientes" WHERE "pacientes"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "pacientes" WHERE "pacientes"."id" = $1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mServicio Load (34.1ms)[0m  SELECT  "servicios".* FROM "servicios"   ORDER BY "servicios"."id" DESC LIMIT 1
+  [1m[36mSpeciality Load (0.8ms)[0m  [1mSELECT  "specialities".* FROM "specialities"   ORDER BY "specialities"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
