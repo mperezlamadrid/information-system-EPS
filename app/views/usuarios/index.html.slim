@@ -1,0 +1,52 @@
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        h1 Lista de Usuarios
+
+        .new-contact-button.btn.btn-primary
+          = link_to 'Nuevo Usuario', new_usuario_path
+
+        .table-responsive
+          table.table.table-striped
+            thead
+              tr
+                th Nombre
+                th Apellido
+                th Nombre de usuario
+                th Cargo
+                th Email
+                /th Password
+                /th Password confirmation
+                th Especialidad
+                /th Pro card
+                /th Pass admin
+                th colspan="3"
+
+            tbody
+              - @usuarios.each do |usuario|
+                tr
+                  td = usuario.first_name
+                  td = usuario.last_name
+                  td = usuario.username
+                  td = usuario.role
+                  td = usuario.email
+                  /td = usuario.password
+                  /td = usuario.password_confirmation
+                  -if usuario.role == "Medico"
+                    td = usuario.specialty
+                  -else
+                    td Ninguna
+                  /td = usuario.pro_card
+                  /td = usuario.pass_admin
+                  td
+                    .btn.btn-primary
+                      = link_to 'Ver', usuario_path(usuario)
+                  td
+                    .btn.btn-success
+                      = link_to 'Editar', edit_usuario_path(usuario)
+                  td
+                    .btn.btn-danger
+                      = link_to 'Eliminar', usuario_path(usuario), method: :delete, data: {:confirm => 'Are you sure?'}
+
+        br

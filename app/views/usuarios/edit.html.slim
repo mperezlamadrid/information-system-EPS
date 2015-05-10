@@ -1,0 +1,53 @@
+h1 Editar Usuario
+
+= form_for @usuario, url: edit_usuario_path(@usuario) do |f|
+  - if @usuario.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@usuario.errors.count, "error")} prohibited this usuario from being saved:"
+      ul
+        - @usuario.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Usuario
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Nombre
+              = f.text_field :first_name, class: "form-control"
+            .field.form-group
+              = f.label :Apellido
+              = f.text_field :last_name, class: "form-control"
+            .field.form-group
+              = f.label :Nombre_de_usuario
+              = f.text_field :username, class: "form-control"
+            .field.form-group
+              = f.label :Rol_dentro_de_la_empresa
+              = f.text_field :role, class: "form-control"
+            .field.form-group
+              = f.label :Email
+              = f.text_field :email, class: "form-control"
+            .field.form-group
+              = f.label :Contraseña
+              = f.text_field :password, class: "form-control"
+            .field.form-group
+              = f.label :Confirmacion_de_contraseña
+              = f.text_field :password_confirmation, class: "form-control"
+            .field.form-group
+              = f.label :Especialidad
+              = f.text_field :specialty, class: "form-control"
+            .field.form-group
+              = f.label :Numero_de_tarjeta_profesional
+              = f.text_field :pro_card, class: "form-control"
+            .field.form-group
+              = f.label :Contraseña_de_Administracion
+              = f.text_field :pass_admin, class: "form-control"
+            .sign-button = f.submit
+
+= link_to 'Show', usuario_path(@usuario)
+'|
+= link_to 'Back', usuarios_path
+
