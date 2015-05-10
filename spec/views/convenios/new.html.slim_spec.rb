@@ -5,7 +5,7 @@ RSpec.describe "convenios/new", type: :view do
     assign(:convenio, Convenio.new(
       :nombre => "MyString",
       :descripcion => "MyString",
-      :estato => ""
+      :estado => ""
     ))
   end
 
@@ -18,7 +18,7 @@ RSpec.describe "convenios/new", type: :view do
 
       assert_select "input#convenio_descripcion[name=?]", "convenio[descripcion]"
 
-      assert_select "input#convenio_estato[name=?]", "convenio[estato]"
+      assert_select "input#convenio_estado[name=?]", "convenio[estado]"
     end
   end
 end

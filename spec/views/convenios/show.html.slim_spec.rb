@@ -5,7 +5,7 @@ RSpec.describe "convenios/show", type: :view do
     @convenio = assign(:convenio, Convenio.create!(
       :nombre => "Nombre",
       :descripcion => "Descripcion",
-      :estato => ""
+      :estado => ""
     ))
   end
 

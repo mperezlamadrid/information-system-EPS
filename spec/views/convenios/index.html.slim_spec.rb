@@ -6,12 +6,12 @@ RSpec.describe "convenios/index", type: :view do
       Convenio.create!(
         :nombre => "Nombre",
         :descripcion => "Descripcion",
-        :estato => ""
+        :estado => ""
       ),
       Convenio.create!(
         :nombre => "Nombre",
         :descripcion => "Descripcion",
-        :estato => ""
+        :estado => ""
       )
     ])
   end

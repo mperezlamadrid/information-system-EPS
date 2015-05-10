@@ -43,6 +43,6 @@ class ConveniosController < ApplicationController
     end
 
     def convenio_params
-      params.require(:convenio).permit(:nombre, :descripcion, :estato)
+      params.require(:convenio).permit(:nombre, :descripcion, :estado)
     end
 end

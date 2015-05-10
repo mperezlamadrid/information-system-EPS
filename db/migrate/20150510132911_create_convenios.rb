@@ -3,7 +3,7 @@ class CreateConvenios < ActiveRecord::Migration
     create_table :convenios do |t|
       t.string :nombre
       t.string :descripcion
-      t.string :estato
+      t.string :estado
 
       t.timestamps
     end

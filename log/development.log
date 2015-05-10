@@ -92303,3 +92303,101 @@ Migrating to AddFieldsAndRemoveoFieldsToConvenios (20150510143912)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 14:47:54.348125"], ["descripcion", "Atencion ginecostetrica"], ["name", "Ginecologo"], ["status", "activo"], ["updated_at", "2015-05-10 14:47:54.348125"]]
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
   [1m[36mConvenio Load (1.1ms)[0m  [1mSELECT  "convenios".* FROM "convenios"   ORDER BY "convenios"."id" DESC LIMIT 1[0m
+  [1m[36m (103.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (147.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150416171734)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying(255) DEFAULT '' NOT NULL, "last_name" character varying(255) DEFAULT '' NOT NULL, "username" character varying(255) DEFAULT '' NOT NULL, "role" character varying(255) DEFAULT '' NOT NULL, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.2ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150416171734"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddSpecialityToUsers (20150509134657)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "specialty" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "pro_card" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "pass_admin" character varying(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509134657"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSpecialities (20150509135745)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.6ms)[0m  [1mCREATE TABLE "specialities" ("id" serial primary key, "name" character varying(255), "descripcion" character varying(255), "status" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509135745"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateServicios (20150510003100)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "servicios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510003100"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePacientes (20150510004509)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510004509"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConvenios (20150510132911)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "convenios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510132911"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "specialities"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 14:51:38.663156"], ["descripcion", "Atencion de primer nivel"], ["name", "General"], ["status", "activo"], ["updated_at", "2015-05-10 14:51:38.663156"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-05-10 14:51:38.669107"], ["descripcion", "Se da en atencion de primer y segundo nivel"], ["name", "Fisioterapia"], ["status", "activo"], ["updated_at", "2015-05-10 14:51:38.669107"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 14:51:38.671175"], ["descripcion", "Atencion ginecostetrica"], ["name", "Ginecologo"], ["status", "activo"], ["updated_at", "2015-05-10 14:51:38.671175"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36m (167.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (76.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150416171734)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying(255) DEFAULT '' NOT NULL, "last_name" character varying(255) DEFAULT '' NOT NULL, "username" character varying(255) DEFAULT '' NOT NULL, "role" character varying(255) DEFAULT '' NOT NULL, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150416171734"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddSpecialityToUsers (20150509134657)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "specialty" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "pro_card" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "pass_admin" character varying(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509134657"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSpecialities (20150509135745)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "specialities" ("id" serial primary key, "name" character varying(255), "descripcion" character varying(255), "status" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150509135745"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateServicios (20150510003100)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "servicios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510003100"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePacientes (20150510004509)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "pacientes" ("id" serial primary key, "tipo_documento" character varying(255), "documento" character varying(255), "pri_nombre" character varying(255), "seg_nombre" character varying(255), "pri_apellido" character varying(255), "seg_apellido" character varying(255), "nacimiento" date, "genero" character varying(255), "direccion" character varying(255), "telefono" character varying(255), "regimen" character varying(255), "num_ficha_sisben" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510004509"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConvenios (20150510132911)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "convenios" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "estado" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150510132911"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "specialities"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 14:54:53.232261"], ["descripcion", "Atencion de primer nivel"], ["name", "General"], ["status", "activo"], ["updated_at", "2015-05-10 14:54:53.232261"]]
+  [1m[36m (123.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2015-05-10 14:54:53.361452"], ["descripcion", "Se da en atencion de primer y segundo nivel"], ["name", "Fisioterapia"], ["status", "activo"], ["updated_at", "2015-05-10 14:54:53.361452"]]
+  [1m[35m (84.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "specialities" ("created_at", "descripcion", "name", "status", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2015-05-10 14:54:53.448251"], ["descripcion", "Atencion ginecostetrica"], ["name", "Ginecologo"], ["status", "activo"], ["updated_at", "2015-05-10 14:54:53.448251"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
