@@ -1,0 +1,15 @@
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@convenio.nombre}
+      .intro-heading-contact
+      	p
+          strong Descripcion:
+          = @convenio.descripcion
+        p
+          strong Estado:
+          = @convenio.estado
+
+= link_to 'Edit', edit_convenio_path(@convenio)
+'|
+= link_to 'Back', convenios_path

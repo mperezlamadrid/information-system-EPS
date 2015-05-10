@@ -27,4 +27,9 @@ class HomeController < ApplicationController
 			render json: { can_create: false }
 		end
 	end
+
+	def show_specialities
+		@specialities = Speciality.all
+		render :show_specialities
+	end
 end

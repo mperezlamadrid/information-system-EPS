@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :specialities
+
+  resources :convenios
+
   resources :servicios
 
   resources :pacientes
@@ -32,7 +36,6 @@ Rails.application.routes.draw do
   resources :enfermeria, only: :index
   resources :medico_general, only: :index
   resources :medico_especialista, only: :index
-  resources :specialities, only: :index
   resources :admin_system, only: :index
   resources :recepcion, only: :index
 
@@ -40,6 +43,7 @@ Rails.application.routes.draw do
   get '/soluciones' => 'home#solutions', as: :solutions
   get '/crear-usuario' => 'home#create_user', as: :create_user
   get '/usuario-admin' => 'home#check_user_admin', as: :check_user_admin
+  get '/show_specialities' => 'home#show_specialities', as: :show_specialities
 
   # Example resource route with options:
   #   resources :products do

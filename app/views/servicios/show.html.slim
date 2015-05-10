@@ -4,10 +4,10 @@
       .intro-lead-in-contact #{@servicio.nombre}
       .intro-heading-contact
       	p
-          strong Tipo documento:
+          strong Nombre:
           = @servicio.descripcion
         p
-          strong Documento:
+          strong Estado:
           = @servicio.estado
 
 = link_to 'Edit', edit_servicio_path(@servicio)

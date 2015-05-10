@@ -1,25 +1,25 @@
-= form_for @servicio do |f|
-  - if @servicio.errors.any?
+= form_for @convenio do |f|
+  - if @convenio.errors.any?
     #error_explanation
-      h2 = "#{pluralize(@servicio.errors.count, "error")} prohibited this servicio from being saved:"
+      h2 = "#{pluralize(@convenio.errors.count, "error")} prohibited this convenio from being saved:"
       ul
-        - @servicio.errors.full_messages.each do |message|
+        - @convenio.errors.full_messages.each do |message|
           li = message
 
   .container
     .container_forms
       .panel.panel-default
         .panel-heading
-          h4 Informacion del Servicio
+          h4 Informacion del Convenio
         .panel-body
           .form
             .field.form-group
-              = f.label :Nombre
+              = f.label :nombre
               = f.text_field :nombre, class: "form-control"
             .field.form-group
-              = f.label :Descripcion
+              = f.label :descripcion
               = f.text_field :descripcion, class: "form-control"
             .field.form-group
-              = f.label :Estado
-              = f.text_field :estado, class: "form-control"
+              = f.label :estato
+              = f.text_field :estato, class: "form-control"
             .sign-button = f.submit

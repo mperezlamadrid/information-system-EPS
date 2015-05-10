@@ -4,7 +4,7 @@ angular.module('EpsMAJJ') .controller('UserController', ['$scope', '$http', '$fi
 	$scope.showPassAdmin = false;
 	$scope.roles = [{id: 1, name: 'Administracion'},{id: 2, name: 'Medico'},{id: 3,name: 'Enfermeria'},{id: 2, name: 'SIAU'}];
 
-	$http.get('/specialities').success(function(data) {
+	$http.get('/show_specialities').success(function(data) {
     $scope.specialities = data["specialities"];
     $scope.defaultSpeciality = $scope.specialities[0];
   }).error(function(){ });
