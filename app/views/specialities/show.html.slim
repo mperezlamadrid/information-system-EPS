@@ -1,3 +1,12 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_speciality_path(@speciality)
+    .btn.btn-default
+      = link_to 'Ver Especialidades', specialities_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
+
 .contact-show
   .content-contact-show
     .intro-text-contact
@@ -9,7 +18,3 @@
         p
           strong Estado:
           = @speciality.status
-
-= link_to 'Edit', edit_speciality_path(@speciality)
-'|
-= link_to 'Back', specialities_path

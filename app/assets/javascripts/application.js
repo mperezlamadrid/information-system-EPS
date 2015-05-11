@@ -15,3 +15,27 @@
 //= require bootstrap-sprockets
 //= require angular
 //= require_tree .
+$(function(){
+	var checkFieldsUser = function(){
+		if ($("#user_role").val() == "1") {
+			console.log("show pass")
+			$("#user_pass_admin").parent(".form-group").addClass("show_pass_admin");
+			$("#user_specialty").parent(".form-group").removeClass("show_field_medico");
+			$("#user_pro_card").parent(".form-group").removeClass("show_field_medico");
+		};
+
+		if ($("#user_role").val() == "2") {
+			console.log("show number")
+			$("#user_pass_admin").parent(".form-group").removeClass("show_pass_admin");
+			$("#user_specialty").parent(".form-group").addClass("show_field_medico");
+			$("#user_pro_card").parent(".form-group").addClass("show_field_medico");
+		};
+	};
+
+	checkFieldsUser();
+
+	$('#user_role').on('change', function() {
+	  checkFieldsUser();
+	});
+
+});

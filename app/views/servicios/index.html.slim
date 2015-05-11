@@ -4,6 +4,8 @@
       .row
         h1 Lista de Servicios
 
+        .btn.btn-default
+          = link_to 'Volver', admin_system_index_path
         .new-contact-button.btn.btn-primary
           = link_to 'Nuevo Servicio', new_servicio_path
 
@@ -29,8 +31,7 @@
                     .btn.btn-success
                       = link_to 'Editar', edit_servicio_path(servicio)
                   td
-                    .btn.btn-danger
-                      = link_to 'Eliminar', servicio, method: :delete, data: {:confirm => 'Are you sure?'}
+                    = button_to 'Eliminar', servicio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 
         br
 

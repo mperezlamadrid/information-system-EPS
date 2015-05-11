@@ -1,8 +1,12 @@
 h1 Editing servicio
 
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver Servicio', @servicio
+    .btn.btn-default
+      = link_to 'Ver Servicios', servicios_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
+
 == render 'form'
-
-= link_to 'Show', @servicio
-'|
-= link_to 'Back', servicios_path
-

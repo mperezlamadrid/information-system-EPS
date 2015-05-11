@@ -7,6 +7,29 @@ div.btn.btn-primary{
 	}
 }
 
+div.btn.btn-success{
+	padding: 0px;
+	a{
+		padding: 6px 12px;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
+div.btn.btn-default{
+	padding: 0px;
+	a{
+		color: #000;
+		padding: 6px 12px;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
+.row-btn{
+	margin-top: 10px;
+}
+
 .sign-button{
   input{
     padding: 10px;
@@ -85,4 +108,13 @@ div.btn.btn-primary{
 			padding: 6px 42px;
 		}
 	}
+}
+
+.hide-fields{
+	display: none;
+}
+
+.show_pass_admin, .show_field_medico{
+	display: inline-block;
+	width: 100%;
 }

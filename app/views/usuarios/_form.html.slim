@@ -24,23 +24,23 @@
               = f.text_field :username, class: "form-control"
             .field.form-group
               = f.label :Rol_dentro_de_la_empresa
-              = f.text_field :role, class: "form-control"
+              = f.select :role, options_for_select([['Administracion', 1],['Medico', 2],['Enfermeria', 3],['SIAU', 4]]), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
             .field.form-group
               = f.label :Email
-              = f.text_field :email, class: "form-control"
+              = f.email_field :email, class: "form-control"
             .field.form-group
               = f.label :Contraseña
-              = f.text_field :password, class: "form-control"
+              = f.password_field :password, class: "form-control"
             .field.form-group
               = f.label :Confirmacion_de_contraseña
-              = f.text_field :password_confirmation, class: "form-control"
-            .field.form-group
+              = f.password_field :password_confirmation, class: "form-control"
+            .field.form-group.hide-fields
               = f.label :Especialidad
-              = f.text_field :specialty, class: "form-control"
-            .field.form-group
+              = f.select :specialty, options_for_select(@specialities.map{|s| [s.name, s.id]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group.hide-fields
               = f.label :Numero_de_tarjeta_profesional
               = f.text_field :pro_card, class: "form-control"
-            .field.form-group
+            .field.form-group.hide-fields
               = f.label :Contraseña_de_Administracion
-              = f.text_field :pass_admin, class: "form-control"
+              = f.password_field :pass_admin, class: "form-control"
             .sign-button = f.submit

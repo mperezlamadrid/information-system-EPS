@@ -3,6 +3,11 @@
 		.container
 			h2  Agregar Convenio
 
-== render 'form'
+.container
+	.row-btn
+		.btn.btn-default
+			= link_to 'Lista de Convenios', convenios_path
+		.btn.btn-default
+			= link_to 'Volver', admin_system_index_path
 
-= link_to 'Back', convenios_path
+== render 'form'

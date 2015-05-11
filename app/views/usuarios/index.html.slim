@@ -4,6 +4,8 @@
       .row
         h1 Lista de Usuarios
 
+        .btn.btn-default
+          = link_to 'Volver', admin_system_index_path
         .new-contact-button.btn.btn-primary
           = link_to 'Nuevo Usuario', new_usuario_path
 
@@ -46,7 +48,6 @@
                     .btn.btn-success
                       = link_to 'Editar', edit_usuario_path(usuario)
                   td
-                    .btn.btn-danger
-                      = link_to 'Eliminar', usuario_path(usuario), method: :delete, data: {:confirm => 'Are you sure?'}
+                    = button_to 'Eliminar', usuario_path(usuario), method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 
         br

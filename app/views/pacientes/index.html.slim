@@ -4,6 +4,8 @@
       .row
         h1 Lista de Pacientes
 
+        .btn.btn-default
+          = link_to 'Volver', admin_system_index_path
         .new-contact-button.btn.btn-primary
           = link_to 'Nuevo Paciente', new_paciente_path
 
@@ -49,7 +51,6 @@
                     .btn.btn-success
                       = link_to 'Editar', edit_paciente_path(paciente)
                   td
-                    .btn.btn-danger
-                      = link_to 'Eliminar', paciente, method: :delete, data: {:confirm => 'Are you sure?'}
+                    = button_to 'Eliminar', paciente, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 
         br

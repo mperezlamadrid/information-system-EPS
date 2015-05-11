@@ -1,3 +1,12 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_servicio_path(@servicio)
+    .btn.btn-default
+      = link_to 'Ver Servicios', servicios_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
+
 .contact-show
   .content-contact-show
     .intro-text-contact
@@ -9,7 +18,3 @@
         p
           strong Estado:
           = @servicio.estado
-
-= link_to 'Edit', edit_servicio_path(@servicio)
-'|
-= link_to 'Back', servicios_path

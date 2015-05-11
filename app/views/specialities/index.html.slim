@@ -4,6 +4,8 @@
       .row
         h1 Lista de Especialidades
 
+        .btn.btn-default
+          = link_to 'Volver', admin_system_index_path
         .new-contact-button.btn.btn-primary
           = link_to 'Nueva Especialidad', new_speciality_path
 
@@ -29,7 +31,6 @@
                     .btn.btn-success
                       = link_to 'Editar', edit_speciality_path(speciality)
                   td
-                    .btn.btn-danger
-                      = link_to 'Eliminar', speciality, method: :delete, data: {:confirm => 'Are you sure?'}
+                    = button_to 'Eliminar', speciality, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 
         br

@@ -1,3 +1,12 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar Convenio', edit_convenio_path(@convenio)
+    .btn.btn-default
+      = link_to 'Lista de Convenios', convenios_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
+
 .contact-show
   .content-contact-show
     .intro-text-contact
@@ -9,7 +18,3 @@
         p
           strong Estado:
           = @convenio.estado
-
-= link_to 'Edit', edit_convenio_path(@convenio)
-'|
-= link_to 'Back', convenios_path

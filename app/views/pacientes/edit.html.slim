@@ -1,8 +1,12 @@
 h1 Editing paciente
 
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver', @paciente
+    .btn.btn-default
+      = link_to 'Lista de Pacientes', pacientes_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
+
 == render 'form'
-
-= link_to 'Show', @paciente
-'|
-= link_to 'Back', pacientes_path
-

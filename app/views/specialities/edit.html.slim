@@ -1,8 +1,13 @@
 h1 Editar Especialidad
 
-== render 'form'
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver', @speciality
+    .btn.btn-default
+      = link_to 'Ver Especialidades', specialities_path
+    .btn.btn-default
+      = link_to 'Volver', admin_system_index_path
 
-= link_to 'Show', @speciality
-'|
-= link_to 'Back', specialities_path
+== render 'form'
 
