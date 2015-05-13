@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   get '/crear-usuario' => 'home#create_user', as: :create_user
   get '/usuario-admin' => 'home#check_user_admin', as: :check_user_admin
   get '/show_specialities' => 'home#show_specialities', as: :show_specialities
+  get '/search_user' => 'usuarios#search_user', as: :search_user
 
   # Example resource route with options:
   #   resources :products do

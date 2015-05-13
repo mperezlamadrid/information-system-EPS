@@ -118,3 +118,31 @@ div.btn.btn-default{
 	display: inline-block;
 	width: 100%;
 }
+
+.search-main{
+	width: 100%;
+	display: inline-block;
+	margin: 10px 0px;
+
+	.search-right{
+		width: 300px;
+		float: right;
+
+		input{
+			float: right;
+		}
+	}
+
+	.form-control, .btn.btn-default{
+		display: inline-block;
+		margin: 0px 5px;
+	}
+
+	.btn.btn-default{
+		width: 30%;
+	}
+
+	.form-control{
+		width: 60%;
+	}
+}

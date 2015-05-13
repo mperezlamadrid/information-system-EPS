@@ -5,9 +5,18 @@
         h1 Lista de Usuarios
 
         .btn.btn-default
-          = link_to 'Volver', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path
         .new-contact-button.btn.btn-primary
-          = link_to 'Nuevo Usuario', new_usuario_path
+          = link_to 'Nuevo Usuario', new_usuario_path, target: "blank"
+        - if @reload_button
+          .reload.btn.btn-default
+            = link_to 'Ver Lista de Usuario', usuarios_path
+
+        .search-main
+          .search-right
+            form action="/search_user"
+              input.btn.btn-info type="submit" value="Search"
+              input.form-control type="text" name="name" placeholder="Buscar por nombre"
 
         .table-responsive
           table.table.table-striped

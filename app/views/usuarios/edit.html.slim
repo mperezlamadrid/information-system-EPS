@@ -7,7 +7,7 @@ h1 Editar Usuario
     .btn.btn-default
       = link_to 'Ver Lista de Usuario', usuarios_path
     .btn.btn-default
-      = link_to 'Volver', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path
 
 = form_for @usuario, url: usuario_path(@usuario), method: :patch do |f|
   - if @usuario.errors.any?

@@ -36,7 +36,7 @@
               = f.date_select :nacimiento, class: "form-control"
             .field.form-group
               = f.label :Genero
-              = f.text_field :genero, class: "form-control"
+              = f.select :genero, options_for_select([['M', 1],['F', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Ingrese el genero del paciente' }
             .field.form-group
               = f.label :Direccion
               = f.text_field :direccion, class: "form-control"
@@ -45,12 +45,12 @@
               = f.text_field :telefono, class: "form-control"
             .field.form-group
               = f.label :Regimen
-              = f.text_field :regimen, class: "form-control"
+              = f.select :regimen, options_for_select([['Subsidiado', 1],['Contributivo', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Regimen' }
             .field.form-group
               = f.label :Numero_de_ficha_del_sisben
               = f.text_field :num_ficha_sisben, class: "form-control"
             .field.form-group
               = f.label :Estado
-              = f.text_field :estado, class: "form-control"
+              = f.select :estado, options_for_select([['A', 1],['I', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Estado del paciente' }
             .sign-button
               = f.submit

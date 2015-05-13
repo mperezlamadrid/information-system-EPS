@@ -5,7 +5,14 @@ class UsuariosController < ApplicationController
   respond_to :html
 
   def index
-    @usuarios = User.all
+    if params[:name]
+      @usuarios = User.where(first_name: params[:name].capitalize)
+      @reload_button = true
+    else
+      @usuarios = User.all
+      @reload_button = false
+    end
+
     respond_with(@usuarios)
   end
 
@@ -16,7 +23,7 @@ class UsuariosController < ApplicationController
   def new
     @specialities = Speciality.all
     @usuario = User.new
-    respond_with(@usuario)
+    # respond_with(@usuario)
   end
 
   def edit
@@ -81,6 +88,10 @@ class UsuariosController < ApplicationController
   def destroy
     @usuario.destroy
     redirect_to usuarios_path
+  end
+
+  def search_user
+    redirect_to usuarios_path(name: params[:name])
   end
 
   private
