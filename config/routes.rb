@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :dia_habils
+
   resources :usuarios
 
   resources :specialities

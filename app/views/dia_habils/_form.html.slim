@@ -1,0 +1,22 @@
+= form_for @dia_habil do |f|
+  - if @dia_habil.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@dia_habil.errors.count, "error")} prohibited this dia_habil from being saved:"
+      ul
+        - @dia_habil.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Dia
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :nombre
+              = f.text_field :nombre, class: "form-control"
+            .field.form-group
+              = f.label :estado
+              = f.select :estado, options_for_select([['V', 1],['I', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit

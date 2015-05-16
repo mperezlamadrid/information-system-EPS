@@ -56,3 +56,14 @@ if Paciente.count == 0
 			estado: row[12])
 	end
 end
+
+dias_csv_text = File.read("#{Rails.root}/config/data/dias.csv")
+dia_csv = CSV.parse(dias_csv_text, headers: false)
+if DiaHabil.count == 0
+	dia_csv.each do |row|
+		DiaHabil.create!(
+			nombre: row[0],
+			estado: row[1])
+	end
+end
+
