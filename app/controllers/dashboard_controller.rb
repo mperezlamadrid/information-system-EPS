@@ -16,6 +16,8 @@ class DashboardController < ApplicationController
           redirect_to enfermeria_path
         elsif current_user.role == "SIAU"
           redirect_to siau_index_path
+        elsif current_user.role == "Super"
+          redirect_to super_user_index_path
     		else
     			redirect_to '/404.html'
     		end

@@ -2,3 +2,27 @@
 	.title
 		.container
 			h2  MEDICINA GENERAL
+section#section2 data-type="parallax_section" data-speed="10"
+	article
+		.our-solutions
+		  .our-solutions-header
+		    h1 Servicios
+		  .our-solutions-body
+		    .row
+		      .col-md-4
+		      	= link_to atencion_index_path, target: "blank"
+			        .solutions-imges
+			          = image_tag("attention.png", alt: "atencion")
+		        .feature-text
+		          h4 Atencion
+		          p
+		            | Recursos necesarios para brindarle informacion y servicios a un usuario de manera rapida y efectiva otorgandole prioridad maxima a los clientes
+		      .col-md-4
+		      	a.section-service href=""
+		      	= link_to historial_clinico_index_path, target: "blank"
+			        .solutions-imges
+			          = image_tag("clinic.png", alt: "historial")
+		        .feature-text
+		          h4 Historial Clinico
+		          p
+		            | Herramienta mediante la cual el profesional médico puede ingresar su información completa o de un pariente a un sistema central.

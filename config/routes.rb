@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   resources :medico_especialista, only: :index
   resources :admin_system, only: :index
   resources :recepcion, only: :index
+  resources :super_user, only: :index
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions
