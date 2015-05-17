@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :hora_habils
+
   resources :minutos_habiles
 
   resources :dia_habils

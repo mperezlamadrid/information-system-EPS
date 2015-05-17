@@ -87,3 +87,13 @@ if DocumentoIdentidad.count == 0
 			siglas: row[1])
 	end
 end
+
+horas_csv_text = File.read("#{Rails.root}/config/data/horas_habiles.csv")
+hora_csv = CSV.parse(horas_csv_text, headers: false)
+if HoraHabil.count == 0
+	hora_csv.each do |row|
+		HoraHabil.create!(
+			hora: row[0],
+			estado: row[1])
+	end
+end

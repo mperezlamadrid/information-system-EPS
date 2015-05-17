@@ -1,0 +1,20 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar Hora', edit_hora_habil_path(@hora_habil), target: "blank"
+    .btn.btn-default
+      = link_to 'Horas', hora_habils_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@hora_habil.hora}
+      .intro-heading-contact
+        p
+          strong Estado:
+          -if @hora_habil.estado == "A"
+          	| Activo
+          -else
+          	| Inactivo
