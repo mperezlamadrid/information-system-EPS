@@ -1,0 +1,15 @@
+.content-eps-landing-dash
+	.title
+		.container
+			h2  Editar Turno
+
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver', @horario, target: "blank"
+    .btn.btn-default
+      = link_to 'Turnos', horarios_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+== render 'form'

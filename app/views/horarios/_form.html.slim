@@ -1,0 +1,28 @@
+= form_for @horario do |f|
+  - if @horario.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@horario.errors.count, "error")} prohibited this horario from being saved:"
+      ul
+        - @horario.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Turno
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Medico
+              = f.select :medico, options_for_select(@medicos.map{|s| ["Dr. #{s.first_name} #{s.last_name}"]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Consultorio
+              = f.select :consultorio, options_for_select(@consultorios.map{|s| ["#{s.nombre} - #{Sede.where(id: s.sede_id).first[:nombre]}"]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Horario_24h
+              = f.select :turno, options_for_select(@horarios.map{|s| (s.minuto.size == 1 ? ["#{s.dia} a las #{s.hora}:0#{s.minuto}"] : ["#{s.dia} a las #{s.hora}:#{s.minuto}"])}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"
