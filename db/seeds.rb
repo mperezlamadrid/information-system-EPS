@@ -97,3 +97,30 @@ if HoraHabil.count == 0
 			estado: row[1])
 	end
 end
+
+sedes_csv_text = File.read("#{Rails.root}/config/data/sedes.csv")
+sedes_csv = CSV.parse(sedes_csv_text, headers: false)
+if Sede.count == 0
+	sedes_csv.each do |row|
+		Sede.create!(
+			nombre: row[0],
+			descripcion: row[1],
+			estado: row[2])
+	end
+end
+
+consultorios_csv_text = File.read("#{Rails.root}/config/data/consultorios.csv")
+consultorios_csv = CSV.parse(consultorios_csv_text, headers: false)
+sedes =  ["Sede Norte","Sede Sur"]
+if Consultorio.count == 0
+	sedes.each do |sede|
+		sede_id = Sede.where(nombre: sede).first.id
+		consultorios_csv.each do |row|
+			Consultorio.create!(
+				nombre: row[0],
+				descripcion: row[1],
+				sede_id: sede_id,
+				estado: row[2])
+		end
+	end
+end

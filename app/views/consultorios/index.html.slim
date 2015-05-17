@@ -1,0 +1,45 @@
+.content-eps-landing-dash
+  .title
+    .container
+      h2  Lista de Consultorios
+
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        .btn.btn-default
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+        .new-contact-button.btn.btn-primary
+          = link_to 'Nuevo Consultorio', new_consultorio_path, target: "blank"
+
+        .table-responsive
+          table.table.table-striped
+            thead
+              tr
+                th Nombre
+                th Descripcion
+                th Sede
+                th Estado
+                th colspan="3"
+
+            tbody
+              - @consultorios.each do |consultorio|
+                tr
+                  td = consultorio.nombre
+                  td = consultorio.descripcion
+                  td = consultorio.sede[:nombre]
+                  td
+                    - if consultorio.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
+                  td
+                    .btn.btn-primary
+                      = link_to 'Ver', consultorio, target: "blank"
+                  td
+                    .btn.btn-success
+                      = link_to 'Editar', edit_consultorio_path(consultorio), target: "blank"
+                  td
+                    = button_to 'Eliminar', consultorio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+
+        br

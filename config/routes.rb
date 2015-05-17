@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :sedes
+
+  resources :consultorios
+
   resources :turnos
 
   resources :hora_habils

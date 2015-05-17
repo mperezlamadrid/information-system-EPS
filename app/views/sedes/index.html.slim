@@ -1,0 +1,43 @@
+.content-eps-landing-dash
+  .title
+    .container
+      h2  Lista de Sedes
+
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        .btn.btn-default
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+        .new-contact-button.btn.btn-primary
+          = link_to 'Nueva Sede', new_sede_path, target: "blank"
+
+        .table-responsive
+          table.table.table-striped
+            thead
+              tr
+                th Nombre
+                th Descripcion
+                th Estado
+                th colspan="3"
+
+            tbody
+              - @sedes.each do |sede|
+                tr
+                  td = sede.nombre
+                  td = sede.descripcion
+                  td
+                    - if sede.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
+                  td
+                    .btn.btn-primary
+                      = link_to 'Ver', sede, target: "blank"
+                  td
+                    .btn.btn-success
+                      = link_to 'Editar', edit_sede_path(sede), target: "blank"
+                  td
+                    = button_to 'Eliminar', sede, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+
+        br

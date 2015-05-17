@@ -1,0 +1,15 @@
+.content-eps-landing-dash
+	.title
+		.container
+			h2  Editar Sede
+
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver', @sede, target: "blank"
+    .btn.btn-default
+      = link_to 'Sedes', sedes_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+== render 'form'

@@ -1,0 +1,23 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_sede_path(@sede), target: "blank"
+    .btn.btn-default
+      = link_to 'Sedes', sedes_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@sede.nombre}
+      .intro-heading-contact
+      	p
+          strong Descripcion:
+          = @sede.descripcion
+        p
+          strong Estado:
+          - if @sede.estado == "A"
+            | Activo
+          -else
+            | Inactivo

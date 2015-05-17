@@ -1,0 +1,26 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_consultorio_path(@consultorio), target: "blank"
+    .btn.btn-default
+      = link_to 'Consultorios', consultorios_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@consultorio.nombre}
+      .intro-heading-contact
+      	p
+          strong Descripcion:
+          = @consultorio.descripcion
+        p
+				  strong Sede:
+				  = @consultorio.sede[:nombre]
+        p
+          strong Estado:
+          - if @consultorio.estado == "A"
+            | Activo
+          -else
+            | Inactivo
