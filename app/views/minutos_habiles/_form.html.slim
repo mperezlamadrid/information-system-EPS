@@ -10,13 +10,13 @@
     .container_forms
       .panel.panel-default
         .panel-heading
-          h4 Minutos Habiles
+          h4 Minuto Habil
         .panel-body
           .form
             .field.form-group
-              = f.label :minuto
+              = f.label :Minuto
               = f.number_field :minuto, class: "form-control"
             .field.form-group
-              = f.label :estado
+              = f.label :Estado
               = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
             .sign-button = f.submit "Enviar"

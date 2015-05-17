@@ -14,9 +14,9 @@
         .panel-body
           .form
             .field.form-group
-              = f.label :nombre
+              = f.label :Nombre
               = f.text_field :nombre, class: "form-control"
             .field.form-group
-              = f.label :estado
+              = f.label :Estado
               = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
             .sign-button = f.submit "Enviar"
