@@ -29,7 +29,7 @@
                     -if turno.minuto == "0"
                       | 00
                     -else
-                      | turno.minuto
+                      = turno.minuto
                   td
                     -if turno.minuto == "0"
                       | #{turno.dia} a las #{turno.hora}:#{turno.minuto}0
