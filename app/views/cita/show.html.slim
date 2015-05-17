@@ -1,0 +1,32 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_citum_path(@citum), target: "blank"
+    .btn.btn-default
+      = link_to 'Citas', cita_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Recepcion', recepcion_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show.cita
+    .intro-text-contact
+      .intro-lead-in-contact Cita #{@citum.tipo}
+      .intro-heading-contact
+        p
+          strong Fecha:
+          = @citum.fecha
+        p
+          strong Horario:
+          = @citum.horario
+        p
+          strong Paciente:
+          = @citum.paciente
+        p
+          strong Especialidad:
+          = @citum.especialidad
+        p
+          strong Estado:
+          - if @citum.estado == "A"
+            | Activo
+          -else
+            | Inactivo

@@ -7,20 +7,20 @@
 	.container
 		ul.list-group
 		  li.list-group-item.col-md-6
-		  	= link_to new_paciente_path, target: "blank"
-		  		spsn	Agregar Paciente
+		  	= link_to pacientes_path, target: "blank"
+		  		spsn	Administrar Paciente
 		  li.list-group-item.col-md-6
-		  	= link_to new_convenio_path, target: "blank"
-		  		span Agregar Convenio
+		  	= link_to convenios_path, target: "blank"
+		  		span Administrar Convenio
 		  li.list-group-item.col-md-6
-		  	= link_to new_speciality_path, target: "blank"
-		  		span Agregar Especialidad
+		  	= link_to specialities_path, target: "blank"
+		  		span Administrar Especialidad
 			li.list-group-item.col-md-6
-				= link_to new_servicio_path, target: "blank"
-					span Agregar Servicio
+				= link_to servicios_path, target: "blank"
+					span Administrar Servicio
 			li.list-group-item.col-md-6
-				= link_to new_usuario_path, target: "blank"
-					span Agregar Usuario
+				= link_to usuarios_path, target: "blank"
+					span Administrar Usuario
 			li.list-group-item.col-md-6
 				= link_to dia_habils_path, target: "blank"
 					span Ver Dias
@@ -31,17 +31,14 @@
 				= link_to hora_habils_path, target: "blank"
 					span Ver Horas Habiles
 			li.list-group-item.col-md-6
-				= link_to new_turno_path, target: "blank"
-					span Agregar Horario
+				= link_to turnos_path, target: "blank"
+					span Administrar Horario
 			li.list-group-item.col-md-6
-				= link_to new_horario_path, target: "blank"
-					span Agregar Turno
+				= link_to horarios_path, target: "blank"
+					span Administrar Turno
 			li.list-group-item.col-md-6
-				= link_to new_sede_path, target: "blank"
-					span Agregar Sede
+				= link_to sedes_path, target: "blank"
+					span Administrar Sede
 			li.list-group-item.col-md-6
-				= link_to new_consultorio_path, target: "blank"
-					span Agregar Consultorio
-			li.list-group-item.col-md-6
-				= link_to root_path, target: "blank"
-					span ...
+				= link_to consultorios_path, target: "blank"
+					span Administrar Consultorio

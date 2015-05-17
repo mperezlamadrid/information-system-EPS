@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517154617) do
+ActiveRecord::Schema.define(version: 20150517171928) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cita", force: true do |t|
+    t.date     "fecha"
+    t.string   "horario"
+    t.string   "paciente"
+    t.string   "especialidad"
+    t.string   "tipo"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "consultorios", force: true do |t|
     t.string   "nombre"

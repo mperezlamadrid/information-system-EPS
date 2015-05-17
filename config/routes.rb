@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :cita
+
   resources :horarios
 
   resources :sedes

@@ -1,0 +1,13 @@
+.content-eps-landing-dash
+	.title
+		.container
+			h2  Agregar Cita
+
+.container
+	.row-btn
+		.btn.btn-default
+			= link_to 'Citas', cita_path, target: "blank"
+		.btn.btn-default
+			= link_to 'Ir Recepcion', recepcion_index_path, target: "blank"
+
+== render 'form'

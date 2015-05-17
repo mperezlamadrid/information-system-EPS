@@ -1,0 +1,34 @@
+= form_for @citum do |f|
+  - if @citum.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@citum.errors.count, "error")} prohibited this citum from being saved:"
+      ul
+        - @citum.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms.cita
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Consultorio
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Fecha
+              = f.date_select :fecha, class: "form-control"
+            .field.form-group
+              = f.label :Horario
+              = f.select :horario, options_for_select(@horarios.map{|s| ["#{s.turno} con el #{s.medico} en el #{s.consultorio}"]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Paciente
+              = f.select :paciente, options_for_select(@pacientes.map{|s| ["#{s.pri_nombre} #{s.seg_nombre} #{s.pri_apellido} #{s.seg_apellido}"]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Especialidad
+              = f.select :especialidad, options_for_select(@especialidades.map{|s| [s.name]}), {}, { class: 'form-control selectpicker', placeholder: 'Enter search term...' }
+            .field.form-group
+              = f.label :Tipo
+              = f.select :tipo, options_for_select(['Programada','No Programada', 'Urgencias']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"
