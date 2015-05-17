@@ -3,11 +3,11 @@ h1 Editar Dia
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Ver Dia', @dia_habil
+      = link_to 'Ver Dia', @dia_habil, target: "blank"
     .btn.btn-default
-      = link_to 'Ver Lista de Dias', dia_habils_path
+      = link_to 'Ver Lista de Dias', dia_habils_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 == render 'form'
 

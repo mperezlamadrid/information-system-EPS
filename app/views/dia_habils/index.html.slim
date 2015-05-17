@@ -5,10 +5,10 @@
         h1 Lista de Dias
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         - if @reload_button
           .reload.btn.btn-default
-            = link_to 'Ver Lista de Dias', dia_habils_path
+            = link_to 'Ver Lista de Dias', dia_habils_path, target: "blank"
 
         / .search-main
         /   .search-right
@@ -28,13 +28,17 @@
               - @dia_habils.each do |dia_habil|
                 tr
                   td.dos_campos_name = dia_habil.nombre
-                  td.dos_campos_estado = dia_habil.estado
+                  td.dos_campos_estado
+                    -if dia_habil.estado == "1" || dia_habil.estado == "A"
+                      | A
+                    -else
+                      | I
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', dia_habil
+                      = link_to 'Ver', dia_habil, target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_dia_habil_path(dia_habil)
+                      = link_to 'Editar', edit_dia_habil_path(dia_habil), target: "blank"
                   /td
                    / = button_to 'Eliminar', dia_habil, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 
