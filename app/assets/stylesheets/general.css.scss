@@ -157,3 +157,10 @@ div.btn.btn-default{
 .btn.btn-default{
 	margin-right: 10px;
 }
+
+li.user:hover {
+	.sub-menu{
+		right: 0!important;
+		left: initial;
+	}
+}

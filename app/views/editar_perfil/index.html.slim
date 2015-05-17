@@ -1,0 +1,35 @@
+.user-data ng-controller='EditUserController' ng-cloak="true"
+  .container_forms
+    .panel.panel-default
+      .panel-heading
+        h4 Editar Usuario
+      .panel-body
+        .alert.alert-danger role="alert" ng-show="show_error"
+          span.sr-only Error:
+          | {{ message_error }}
+        form
+          .form-group
+            input.form-control ng-model="email" autofocus="true" ng-required="true" placeholder="Correo electronico" type="email"
+          .form-group
+            input.form-control ng-model="first_name" ng-required="true" placeholder="Primer Nombre" type="text"
+          .form-group
+            input.form-control ng-model="last_name" ng-required="true" placeholder="Primer Apellido" type="text"
+          .form-group
+            input.form-control ng-model="username" ng-required="true" placeholder="Nombre de usuario" type="text"
+          .form-group
+            input.form-control ng-model="role" ng-required="true" placeholder="Rol dentro de la empresa" disabled="true" type="text"
+          .form-group
+            input.form-control ng-model="password" ng-required="true" placeholder="Contraseña" type="password"
+          .form-group
+            input.form-control ng-model="passwordConfirmation" ng-required="true" placeholder="Confirmacion de Contraseña" type="password"
+          .form-group ng-show="showPassAdmin"
+            input.form-control ng-model="passAdmin" placeholder="Contraseña de Administracion" type="password"
+          .form-group ng-show="showFieldsMedico"
+            select.selectpicker.form-control ng-model="defaultSpeciality" ng-options="speciality.name for speciality in specialities" title='Especialidad' selectpicker=""
+              option value="" ng-if="false"
+          .form-group ng-show="showFieldsMedico"
+            input.form-control ng-model="proCard" placeholder="Tarjeta Profesional" type="text"
+          button.btn.btn-primary.pull-right type="submit" ng-click="createUser(email,first_name,last_name,username,role,password,passwordConfirmation,passAdmin,defaultSpeciality,proCard)"
+            | Agregar
+          span.btn.btn-default.btn-danger.pull-left
+            = link_to("Cancelar", root_path, method: :delete)

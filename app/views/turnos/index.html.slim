@@ -1,0 +1,52 @@
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        h1 Lista de Turnos
+
+        .btn.btn-default
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+        .new-contact-button.btn.btn-primary
+          = link_to 'Nuevo Turno', new_turno_path, target: "blank"
+
+        .table-responsive
+          table.table.table-striped
+            thead
+              tr
+                th Dia
+                th Hora
+                th Minuto
+                th Turno (24h)
+                th Estado
+                th colspan="3"
+
+            tbody
+              - @turnos.each do |turno|
+                tr
+                  td = turno.dia
+                  td = turno.hora
+                  td
+                    -if turno.minuto == "0"
+                      | 00
+                    -else
+                      | turno.minuto
+                  td
+                    -if turno.minuto == "0"
+                      | #{turno.dia} a las #{turno.hora}:#{turno.minuto}0
+                    -else
+                      | #{turno.dia} a las #{turno.hora}:#{turno.minuto}
+                  td
+                    -if turno.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
+                  td
+                    .btn.btn-primary
+                      = link_to 'Ver', turno, target: "blank"
+                  td
+                    .btn.btn-success
+                      = link_to 'Editar', edit_turno_path(turno), target: "blank"
+                  td
+                    = button_to 'Eliminar', turno, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+
+        br

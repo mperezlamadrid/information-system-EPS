@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :turnos
+
   resources :hora_habils
 
   resources :minutos_habiles
@@ -47,6 +49,12 @@ Rails.application.routes.draw do
   resources :admin_system, only: :index
   resources :recepcion, only: :index
   resources :super_user, only: :index
+  resources :editar_perfil , only: [:index] do
+    collection do
+      get :editar_perfil
+      get :show_user_data
+    end
+  end
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions

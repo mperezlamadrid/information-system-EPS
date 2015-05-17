@@ -1,0 +1,24 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_turno_path(@turno), target: "blank"
+    .btn.btn-default
+      = link_to 'Turnos', turnos_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact
+        -if @turno.minuto == "0"
+          | #{@turno.dia} a las #{@turno.hora}:#{@turno.minuto}0 (24h)
+        -else
+          | #{@turno.dia} a las #{@turno.hora}:#{@turno.minuto} (24h)
+      .intro-heading-contact
+        p
+          strong Estado:
+          - if @turno.estado == "A"
+            | Activo
+          -else
+            | Inactivo
