@@ -11,8 +11,8 @@
   .content-contact-show
     .intro-text-contact
       .intro-lead-in-contact
-        -if @turno.minuto == "0"
-          | #{@turno.dia} a las #{@turno.hora}:#{@turno.minuto}0 (24h)
+        -if @turno.minuto.size == 1
+          | #{@turno.dia} a las #{@turno.hora}:0#{@turno.minuto} (24h)
         -else
           | #{@turno.dia} a las #{@turno.hora}:#{@turno.minuto} (24h)
       .intro-heading-contact

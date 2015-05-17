@@ -31,8 +31,8 @@
                     -else
                       = turno.minuto
                   td
-                    -if turno.minuto == "0"
-                      | #{turno.dia} a las #{turno.hora}:#{turno.minuto}0
+                    -if turno.minuto.size == 1
+                      | #{turno.dia} a las #{turno.hora}:0#{turno.minuto}
                     -else
                       | #{turno.dia} a las #{turno.hora}:#{turno.minuto}
                   td
