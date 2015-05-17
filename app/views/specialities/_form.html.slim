@@ -18,7 +18,7 @@
               = f.text_field :name, class: "form-control"
             .field.form-group
               = f.label :Descripcion
-              = f.text_field :descripcion, class: "form-control"
+              = f.text_area :descripcion, class: "form-control"
             .field.form-group
               = f.label :Estado
               = f.select :status, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
