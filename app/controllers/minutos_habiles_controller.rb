@@ -1,4 +1,5 @@
 class MinutosHabilesController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_minutos_habile, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
