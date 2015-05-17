@@ -1,0 +1,47 @@
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        h1 Lista de Minutos
+
+        .btn.btn-default
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+        .new-contact-button.btn.btn-primary
+          = link_to 'Nuevo Minuto Habil', new_minutos_habile_path, target: "blank"
+        - if @reload_button
+          .reload.btn.btn-default
+            = link_to 'Minutos', dia_habils_path, target: "blank"
+
+        / .search-main
+        /   .search-right
+        /     form action="/search_user"
+        /       input.btn.btn-info type="submit" value="Search"
+        /       input.form-control type="text" name="name" placeholder="Buscar por nombre"
+
+        .table-responsive
+          table.table.table-striped
+            thead
+              tr
+                th Minuto
+                th Estado
+                th colspan="3"
+
+            tbody
+              - @minutos_habiles.each do |minutos_habile|
+                tr
+                  td.dos_campos_name = minutos_habile.minuto
+                  td.dos_campos_estado
+                    - if minutos_habile.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
+                  td
+                    .btn.btn-primary
+                      = link_to 'Ver', minutos_habile, target: "blank"
+                  td
+                    .btn.btn-success
+                      = link_to 'Editar', edit_minutos_habile_path(minutos_habile), target: "blank"
+                  td
+                    = button_to 'Eliminar', minutos_habile, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+
+        br

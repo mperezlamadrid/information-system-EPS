@@ -3,7 +3,7 @@
     .btn.btn-default
       = link_to 'Editar Dia', edit_dia_habil_path(@dia_habil), target: "blank"
     .btn.btn-default
-      = link_to 'Ver Lista de Dias', dia_habils_path, target: "blank"
+      = link_to 'Dias', dia_habils_path, target: "blank"
     .btn.btn-default
       = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
@@ -14,7 +14,7 @@
       .intro-heading-contact
         p
           strong Estado:
-          -if @dia_habil.estado == "A" || @dia_habil.estado == "1"
+          -if @dia_habil.estado == "A"
           	| Activo
           -else
           	| Inactivo

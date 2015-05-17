@@ -1,12 +1,12 @@
-h1 Editing paciente
+h1 Editar Paciente
 
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Ver', @paciente
+      = link_to 'Ver', @paciente, target: "blank"
     .btn.btn-default
-      = link_to 'Lista de Pacientes', pacientes_path
+      = link_to 'Pacientes', pacientes_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 == render 'form'

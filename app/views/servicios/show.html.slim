@@ -3,7 +3,7 @@
     .btn.btn-default
       = link_to 'Editar', edit_servicio_path(@servicio)
     .btn.btn-default
-      = link_to 'Ver Servicios', servicios_path
+      = link_to 'Servicios', servicios_path
     .btn.btn-default
       = link_to 'Ir Administracion', admin_system_index_path
 
@@ -17,4 +17,7 @@
           = @servicio.descripcion
         p
           strong Estado:
-          = @servicio.estado
+          - if @servicio.estado == "A"
+            | Activo
+          -else
+            | Inactivo

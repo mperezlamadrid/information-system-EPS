@@ -3,11 +3,11 @@ h1 Editar Especialidad
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Ver', @speciality
+      = link_to 'Ver', @speciality, target: "blank"
     .btn.btn-default
-      = link_to 'Ver Especialidades', specialities_path
+      = link_to 'Especialidades', specialities_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 == render 'form'
 

@@ -5,9 +5,9 @@
         h1 Lista de Servicios
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         .new-contact-button.btn.btn-primary
-          = link_to 'Nuevo Servicio', new_servicio_path
+          = link_to 'Nuevo Servicio', new_servicio_path, target: "blank"
 
         .table-responsive
           table.table.table-striped
@@ -23,13 +23,17 @@
                 tr
                   td = servicio.nombre
                   td = servicio.descripcion
-                  td = servicio.estado
+                  td
+                    - if servicio.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', servicio
+                      = link_to 'Ver', servicio, target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_servicio_path(servicio)
+                      = link_to 'Editar', edit_servicio_path(servicio), target: "blank"
                   td
                     = button_to 'Eliminar', servicio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 

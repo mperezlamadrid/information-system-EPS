@@ -5,9 +5,9 @@
         h1 Lista de Especialidades
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         .new-contact-button.btn.btn-primary
-          = link_to 'Nueva Especialidad', new_speciality_path
+          = link_to 'Nueva Especialidad', new_speciality_path, target: "blank"
 
         .table-responsive
           table.table.table-striped
@@ -23,13 +23,17 @@
                 tr
                   td = speciality.name
                   td = speciality.descripcion
-                  td = speciality.status
+                  td
+                    - if speciality.status == "A"
+                      | Activo
+                    -else
+                      | Inactivo
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', speciality
+                      = link_to 'Ver', speciality, target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_speciality_path(speciality)
+                      = link_to 'Editar', edit_speciality_path(speciality), target: "blank"
                   td
                     = button_to 'Eliminar', speciality, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 

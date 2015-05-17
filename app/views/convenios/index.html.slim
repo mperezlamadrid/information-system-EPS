@@ -5,9 +5,9 @@
         h1 Lista de Convenios
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         .new-contact-button.btn.btn-primary
-          = link_to 'Nuevo Convenio', new_convenio_path
+          = link_to 'Nuevo Convenio', new_convenio_path, target: "blank"
 
         .table-responsive
           table.table.table-striped
@@ -23,13 +23,17 @@
                 tr
                   td = convenio.nombre
                   td = convenio.descripcion
-                  td = convenio.estado
+                  td
+                    - if convenio.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', convenio
+                      = link_to 'Ver', convenio, target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_convenio_path(convenio)
+                      = link_to 'Editar', edit_convenio_path(convenio), target: "blank"
                   td
                     = button_to 'Eliminar', convenio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 

@@ -67,3 +67,23 @@ if DiaHabil.count == 0
 	end
 end
 
+
+minutos_csv_text = File.read("#{Rails.root}/config/data/minutos_habiles.csv")
+minutos_csv = CSV.parse(minutos_csv_text, headers: false)
+if MinutosHabile.count == 0
+	minutos_csv.each do |row|
+		MinutosHabile.create!(
+			minuto: row[0],
+			estado: row[1])
+	end
+end
+
+documentos_csv_text = File.read("#{Rails.root}/config/data/documentos_identidad.csv")
+documentos_csv = CSV.parse(documentos_csv_text, headers: false)
+if DocumentoIdentidad.count == 0
+	documentos_csv.each do |row|
+		DocumentoIdentidad.create!(
+			nombre: row[0],
+			siglas: row[1])
+	end
+end

@@ -1,0 +1,13 @@
+h1 Editar Minutos
+
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Ver Minutos', @minutos_habile, target: "blank"
+    .btn.btn-default
+      = link_to 'Minutos', minutos_habiles_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+== render 'form'
+

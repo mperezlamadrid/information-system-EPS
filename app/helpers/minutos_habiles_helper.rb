@@ -1,0 +1,2 @@
+module MinutosHabilesHelper
+end

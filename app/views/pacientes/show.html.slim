@@ -1,11 +1,11 @@
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Editar', edit_paciente_path(@paciente)
+      = link_to 'Editar', edit_paciente_path(@paciente), target: "blank"
     .btn.btn-default
-      = link_to 'Lista de Pacientes', pacientes_path
+      = link_to 'Pacientes', pacientes_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 .contact-show
   .content-contact-show
@@ -23,7 +23,10 @@
           = @paciente.nacimiento
         p
           strong Genero:
-          = @paciente.genero
+          - if @paciente.genero == "M"
+            | Masculino
+          -else
+            | Femenino
         p
           strong Direccion:
           = @paciente.direccion
@@ -38,4 +41,7 @@
           = @paciente.num_ficha_sisben
         p
           strong Estado:
-          = @paciente.estado
+          - if @paciente.estado == "A"
+            | Activo
+          -else
+            | Inactivo

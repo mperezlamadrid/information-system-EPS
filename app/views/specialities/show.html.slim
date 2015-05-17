@@ -1,11 +1,11 @@
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Editar', edit_speciality_path(@speciality)
+      = link_to 'Editar', edit_speciality_path(@speciality), target: "blank"
     .btn.btn-default
-      = link_to 'Ver Especialidades', specialities_path
+      = link_to 'Especialidades', specialities_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 .contact-show
   .content-contact-show
@@ -17,4 +17,7 @@
           = @speciality.descripcion
         p
           strong Estado:
-          = @speciality.status
+          - if @speciality.status == "A"
+            | Activo
+          -else
+            | Inactivo

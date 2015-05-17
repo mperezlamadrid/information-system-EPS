@@ -14,11 +14,13 @@ class PacientesController < ApplicationController
   end
 
   def new
+    @identidades = DocumentoIdentidad.all
     @paciente = Paciente.new
     respond_with(@paciente)
   end
 
   def edit
+    @identidades = DocumentoIdentidad.all
   end
 
   def create

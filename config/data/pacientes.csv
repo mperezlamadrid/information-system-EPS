@@ -1,21 +1,21 @@
-CC,1047231980,Carlos,Alberto,Villegas,Lopera,1975-05-03,M,Cra 8 # 27 -112,3102331234,Simplificado,12345674567,Activo
-CC,1376234892,Jorge,,Uribe,Botero,1990-09-20,M,Cll 34 # 45 - 2,3004569237,Subsidiado,12345674567,Activo
-CC,1705237804,Maria,Isabel,Lopez,Gaviria,1970-07-13,F,Cra 8 # 27 -113,2906807240,Subsidiado,12345674567,Activo
-CC,2034240716,Alfredo,,Tobon,Tobon,2001-05-23,M,Cll 34 # 45 - 3,2809045243,Subsidiado,12345674567,Activo
-CC,2363243628,Hector,Damian,Mosquera,Benitez,1987-03-17,M,Cra 8 # 27 -114,2711283246,Subsidiado,12345674567,Activo
-CC,2692246540,Alvaro,Ivan,Berdugo,Lopez,1998-01-01,M,Cll 34 # 45 - 4,2613521249,Subsidiado,12345674567,Activo
-CC,3021249452,Carlos,Alberto,Zarate,Yepez,2000-03-12,M,Cra 8 # 27 -115,2515759252,Subsidiado,12345674567,Activo
-CC,3350252364,Hernan,Dario,Hurtado,Perez,1976-10-10,M,Cll 34 # 45 - 5,2417997255,Subsidiado,12345674567,Activo
-CC,3679255276,Jorge,,Ruiz,Ruiz,1988-11-19,M,Cra 8 # 27 -116,2320235258,Simplificado,12345674567,Activo
-CC,4008258188,John,Jairo,Duque,Garcia,2001-05-02,M,Cll 34 # 45 - 6,2222473261,Simplificado,12345674567,Activo
-CC,4337261100,Armid,Benjamin,Muñoz,Ramirez,1986-03-30,M,Cra 8 # 27 -117,2124711264,Subsidiado,12345674567,Activo
-CC,4666264012,Elkin,Octavio,Diaz,Perez,2010-04-12,M,Cll 34 # 45 - 7,2026949267,Simplificado,12345674567,Activo
-CC,4995266924,Julio,Cesar,Rodas,Monsalve,1999-12-30,M,Cra 8 # 27 -118,1929187270,Simplificado,12345674567,Activo
-CC,5324269836,Gabriel,Jaime,Jimenez,Gomez,1977-06-12,M,Cll 34 # 45 - 8,1831425273,Subsidiado,12345674567,Activo
-CC,5653272748,Jose,Didier,Zapata,Suarez,1994-03-27,M,Cra 8 # 27 -119,1733663276,Simplificado,12345674567,Activo
-CC,5982275660,Bernardo,,Posada,Vera,1999-07-21,M,Cll 34 # 45 - 9,1635901279,Simplificado,12345674567,Activo
-CC,6311278572,Luis,Guillermo,Velez,Osorio,2004-05-21,M,Cra 8 # 27 -120,1538139282,Subsidiado,12345674567,Activo
-CC,6640281484,Horacio,,Moreno,Correa,1993-09-28,M,Cll 34 # 45 - 10,1440377285,Simplificado,12345674567,Activo
-CC,6969284396,Alejandro,,Alazate,Garces,1991-09-14,M,Cra 8 # 27 -121,1342615288,Simplificado,12345674567,Activo
-CC,7298287308,Javier,Ignacio,Aguilar,Gomez,2000-05-23,M,Cll 34 # 45 - 11,1244853291,Subsidiado,12345674567,Activo
-CC,7627290220,Adolfo,,Correa,Silva,2006-08-07,M,Cra 8 # 27 -122,1147091294,Simplificado,12345674567,Activo
+CC,1047231980,Carlos,Alberto,Villegas,Lopera,1975-05-03,M,Cra 8 # 27 -112,3102331234,Simplificado,12345674567,A
+CC,1376234892,Jorge,,Uribe,Botero,1990-09-20,M,Cll 34 # 45 - 2,3004569237,Subsidiado,12345674567,A
+CC,1705237804,Maria,Isabel,Lopez,Gaviria,1970-07-13,F,Cra 8 # 27 -113,2906807240,Subsidiado,12345674567,A
+CC,2034240716,Alfredo,,Tobon,Tobon,2001-05-23,M,Cll 34 # 45 - 3,2809045243,Subsidiado,12345674567,A
+CC,2363243628,Hector,Damian,Mosquera,Benitez,1987-03-17,M,Cra 8 # 27 -114,2711283246,Subsidiado,12345674567,A
+CC,2692246540,Alvaro,Ivan,Berdugo,Lopez,1998-01-01,M,Cll 34 # 45 - 4,2613521249,Subsidiado,12345674567,A
+CC,3021249452,Carlos,Alberto,Zarate,Yepez,2000-03-12,M,Cra 8 # 27 -115,2515759252,Subsidiado,12345674567,A
+CC,3350252364,Hernan,Dario,Hurtado,Perez,1976-10-10,M,Cll 34 # 45 - 5,2417997255,Subsidiado,12345674567,A
+CC,3679255276,Jorge,,Ruiz,Ruiz,1988-11-19,M,Cra 8 # 27 -116,2320235258,Simplificado,12345674567,A
+CC,4008258188,John,Jairo,Duque,Garcia,2001-05-02,M,Cll 34 # 45 - 6,2222473261,Simplificado,12345674567,A
+CC,4337261100,Armid,Benjamin,Muñoz,Ramirez,1986-03-30,M,Cra 8 # 27 -117,2124711264,Subsidiado,12345674567,A
+CC,4666264012,Elkin,Octavio,Diaz,Perez,2010-04-12,M,Cll 34 # 45 - 7,2026949267,Simplificado,12345674567,A
+CC,4995266924,Julio,Cesar,Rodas,Monsalve,1999-12-30,M,Cra 8 # 27 -118,1929187270,Simplificado,12345674567,A
+CC,5324269836,Gabriel,Jaime,Jimenez,Gomez,1977-06-12,M,Cll 34 # 45 - 8,1831425273,Subsidiado,12345674567,A
+CC,5653272748,Jose,Didier,Zapata,Suarez,1994-03-27,M,Cra 8 # 27 -119,1733663276,Simplificado,12345674567,A
+CC,5982275660,Bernardo,,Posada,Vera,1999-07-21,M,Cll 34 # 45 - 9,1635901279,Simplificado,12345674567,A
+CC,6311278572,Luis,Guillermo,Velez,Osorio,2004-05-21,M,Cra 8 # 27 -120,1538139282,Subsidiado,12345674567,A
+CC,6640281484,Horacio,,Moreno,Correa,1993-09-28,M,Cll 34 # 45 - 10,1440377285,Simplificado,12345674567,A
+CC,6969284396,Alejandro,,Alazate,Garces,1991-09-14,M,Cra 8 # 27 -121,1342615288,Simplificado,12345674567,A
+CC,7298287308,Javier,Ignacio,Aguilar,Gomez,2000-05-23,M,Cll 34 # 45 - 11,1244853291,Subsidiado,12345674567,A
+CC,7627290220,Adolfo,,Correa,Silva,2006-08-07,M,Cra 8 # 27 -122,1147091294,Simplificado,12345674567,A

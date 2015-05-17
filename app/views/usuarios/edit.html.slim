@@ -3,11 +3,11 @@ h1 Editar Usuario
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Ver Contacto', usuario_path(@usuario)
+      = link_to 'Ver Usuario', usuario_path(@usuario), target: "blank"
     .btn.btn-default
-      = link_to 'Ver Lista de Usuario', usuarios_path
+      = link_to 'Usuarios', usuarios_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 = form_for @usuario, url: usuario_path(@usuario), method: :patch do |f|
   - if @usuario.errors.any?
@@ -54,5 +54,5 @@ h1 Editar Usuario
             .field.form-group.hide-fields
               = f.label :Contraseña_de_Administracion
               = f.password_field :pass_admin, class: "form-control"
-            .sign-button = f.submit
+            .sign-button = f.submit "Enviar"
 

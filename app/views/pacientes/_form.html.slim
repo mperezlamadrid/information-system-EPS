@@ -14,8 +14,8 @@
         .panel-body
           .form
             .field.form-group
-              = f.label :tipo_documento
-              = f.text_field :tipo_documento, class: "form-control"
+              = f.label :Tipo_de_Documento
+              = f.select :tipo_documento, options_for_select(@identidades.map{|s| [s.nombre, s.siglas]}), {}, { class: 'form-control selectpicker', placeholder: 'Tipo de Documento' }
             .field.form-group
               = f.label :Documento
               = f.text_field :documento, class: "form-control"
@@ -36,7 +36,7 @@
               = f.date_select :nacimiento, class: "form-control"
             .field.form-group
               = f.label :Genero
-              = f.select :genero, options_for_select([['M', 1],['F', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Ingrese el genero del paciente' }
+              = f.select :genero, options_for_select(['M','F']), {}, { class: 'form-control selectpicker', placeholder: 'Ingrese el genero del paciente' }
             .field.form-group
               = f.label :Direccion
               = f.text_field :direccion, class: "form-control"
@@ -51,6 +51,6 @@
               = f.text_field :num_ficha_sisben, class: "form-control"
             .field.form-group
               = f.label :Estado
-              = f.select :estado, options_for_select([['A', 1],['I', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Estado del paciente' }
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado del paciente' }
             .sign-button
-              = f.submit
+              = f.submit "Enviar"

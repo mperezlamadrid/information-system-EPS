@@ -8,7 +8,7 @@
           = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         - if @reload_button
           .reload.btn.btn-default
-            = link_to 'Ver Lista de Dias', dia_habils_path, target: "blank"
+            = link_to 'Dias', dia_habils_path, target: "blank"
 
         / .search-main
         /   .search-right
@@ -29,10 +29,10 @@
                 tr
                   td.dos_campos_name = dia_habil.nombre
                   td.dos_campos_estado
-                    -if dia_habil.estado == "1" || dia_habil.estado == "A"
-                      | A
+                    -if dia_habil.estado == "A"
+                      | Activo
                     -else
-                      | I
+                      | Inactivo
                   td
                     .btn.btn-primary
                       = link_to 'Ver', dia_habil, target: "blank"

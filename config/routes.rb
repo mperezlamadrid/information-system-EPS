@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :minutos_habiles
+
   resources :dia_habils
 
   resources :usuarios

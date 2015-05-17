@@ -1,0 +1,22 @@
+= form_for @minutos_habile do |f|
+  - if @minutos_habile.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@minutos_habile.errors.count, "error")} prohibited this minutos_habile from being saved:"
+      ul
+        - @minutos_habile.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Minutos Habiles
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :minuto
+              = f.number_field :minuto, class: "form-control"
+            .field.form-group
+              = f.label :estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

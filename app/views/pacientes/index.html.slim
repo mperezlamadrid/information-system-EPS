@@ -5,9 +5,9 @@
         h1 Lista de Pacientes
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         .new-contact-button.btn.btn-primary
-          = link_to 'Nuevo Paciente', new_paciente_path
+          = link_to 'Nuevo Paciente', new_paciente_path, target: "blank"
 
         .table-responsive
           table.table.table-striped
@@ -38,18 +38,26 @@
                   td = paciente.pri_apellido
                   td = paciente.seg_apellido
                   td = paciente.nacimiento
-                  td = paciente.genero
+                  td
+                    - if paciente.genero == "M"
+                      | Maculino
+                    -else
+                      | Femenino
                   td = paciente.direccion
                   td = paciente.telefono
                   td = paciente.regimen
                   td = paciente.num_ficha_sisben
-                  td = paciente.estado
+                  td
+                    - if paciente.estado == "A"
+                      | Activo
+                    -else
+                      | Inactivo
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', paciente
+                      = link_to 'Ver', paciente, target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_paciente_path(paciente)
+                      = link_to 'Editar', edit_paciente_path(paciente), target: "blank"
                   td
                     = button_to 'Eliminar', paciente, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 

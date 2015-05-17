@@ -5,12 +5,12 @@
         h1 Lista de Usuarios
 
         .btn.btn-default
-          = link_to 'Ir Administracion', admin_system_index_path
+          = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
         .new-contact-button.btn.btn-primary
           = link_to 'Nuevo Usuario', new_usuario_path, target: "blank"
         - if @reload_button
           .reload.btn.btn-default
-            = link_to 'Ver Lista de Usuario', usuarios_path
+            = link_to 'Ver Lista de Usuario', usuarios_path, target: "blank"
 
         .search-main
           .search-right
@@ -52,10 +52,10 @@
                   /td = usuario.pass_admin
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', usuario_path(usuario)
+                      = link_to 'Ver', usuario_path(usuario), target: "blank"
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_usuario_path(usuario)
+                      = link_to 'Editar', edit_usuario_path(usuario), target: "blank"
                   td
                     = button_to 'Eliminar', usuario_path(usuario), method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
 

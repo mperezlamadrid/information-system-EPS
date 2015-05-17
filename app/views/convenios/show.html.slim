@@ -1,11 +1,11 @@
 .container
   .row-btn
     .btn.btn-default
-      = link_to 'Editar Convenio', edit_convenio_path(@convenio)
+      = link_to 'Editar Convenio', edit_convenio_path(@convenio), target: "blank"
     .btn.btn-default
-      = link_to 'Lista de Convenios', convenios_path
+      = link_to 'Convenios', convenios_path, target: "blank"
     .btn.btn-default
-      = link_to 'Ir Administracion', admin_system_index_path
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
 .contact-show
   .content-contact-show
@@ -17,4 +17,7 @@
           = @convenio.descripcion
         p
           strong Estado:
-          = @convenio.estado
+          - if @convenio.estado == "A"
+            | Activo
+          -else
+            | Inactivo
