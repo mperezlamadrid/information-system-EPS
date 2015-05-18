@@ -71,6 +71,8 @@ Rails.application.routes.draw do
   get '/show_specialities' => 'home#show_specialities', as: :show_specialities
   get '/search_user' => 'usuarios#search_user', as: :search_user
 
+  get '*path' => redirect('/404.html')
+
   # Example resource route with options:
   #   resources :products do
   #     member do
