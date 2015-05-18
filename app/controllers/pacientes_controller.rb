@@ -1,5 +1,6 @@
 class PacientesController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :can_edit_database
   before_action :set_paciente, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -46,5 +47,13 @@ class PacientesController < ApplicationController
 
     def paciente_params
       params.require(:paciente).permit(:tipo_documento, :documento, :pri_nombre, :seg_nombre, :pri_apellido, :seg_apellido, :nacimiento, :genero, :direccion, :telefono, :regimen, :num_ficha_sisben, :estado)
+    end
+
+    def can_edit_database
+      if current_user.role == "Super" || current_user.role == "Administracion"
+        return true
+      else
+        redirect_to root_path
+      end
     end
 end

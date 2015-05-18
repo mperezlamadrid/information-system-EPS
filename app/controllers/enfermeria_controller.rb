@@ -1,5 +1,6 @@
 class EnfermeriaController < ApplicationController
 	before_filter :authenticate_user!
+	before_filter :check_role_super
 
 	def index
 		@title = 'Enfermeria'
@@ -12,5 +13,15 @@ class EnfermeriaController < ApplicationController
 	  else
 	  	redirect_to root_path
 	  end
+	end
+
+	private
+
+	def check_role_super
+		if current_user.role == "Enfermeria"
+			return true
+		else
+			redirect_to root_path
+		end
 	end
 end

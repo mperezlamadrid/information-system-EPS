@@ -1,5 +1,6 @@
 class SedesController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :can_edit_database
   before_action :set_sede, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -44,5 +45,13 @@ class SedesController < ApplicationController
 
     def sede_params
       params.require(:sede).permit(:nombre, :descripcion, :estado)
+    end
+
+    def can_edit_database
+      if current_user.role == "Super" || current_user.role == "Administracion"
+        return true
+      else
+        redirect_to root_path
+      end
     end
 end

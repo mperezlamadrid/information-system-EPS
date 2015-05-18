@@ -1,5 +1,6 @@
 class ConsultoriosController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :can_edit_database
   before_action :set_consultorio, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -58,5 +59,13 @@ class ConsultoriosController < ApplicationController
 
     def consultorio_params
       params.require(:consultorio).permit(:nombre, :descripcion, :estado, :sede_id)
+    end
+
+    def can_edit_database
+      if current_user.role == "Super" || current_user.role == "Administracion"
+        return true
+      else
+        redirect_to root_path
+      end
     end
 end

@@ -1,5 +1,6 @@
 class CitaController < ApplicationController
   before_action :set_citum, only: [:show, :edit, :update, :destroy]
+  before_filter :can_edit_database
 
   respond_to :html
 
@@ -49,5 +50,13 @@ class CitaController < ApplicationController
 
     def citum_params
       params.require(:citum).permit(:fecha, :horario, :paciente, :especialidad, :tipo, :estado)
+    end
+
+    def can_edit_database
+      if current_user.role == "Super" || current_user.role == "SIAU"
+        return true
+      else
+        redirect_to root_path
+      end
     end
 end

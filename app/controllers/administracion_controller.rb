@@ -1,5 +1,6 @@
 class AdministracionController < ApplicationController
 	before_filter :authenticate_user!
+	before_filter :check_role_super
 
 	def index
 		@title = 'Administracion'
@@ -12,5 +13,15 @@ class AdministracionController < ApplicationController
 	  else
 	  	redirect_to root_path
 	  end
+	end
+
+	private
+
+	def check_role_super
+		if current_user.role == "Administracion"
+			return true
+		else
+			redirect_to root_path
+		end
 	end
 end
