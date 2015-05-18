@@ -1,5 +1,5 @@
 hr{
-  border-top: 1px solid #000;
+  border-top: 1px solid #228CDB;
 }
 
 .about-us{
@@ -16,15 +16,23 @@ hr{
 	.footer-page{
 		margin-top: 50px;
 
+		@media (max-width: 850px){
+			.column-about{
+				width: 100%!important;
+				margin-top: 20px!important;
+			}
+		}
+
 		.column-about{
 			width: 377px;
 			display: inline-block;
 			text-align: center;
+			vertical-align: top;
 
 			.image-about{
 				width: 280px;
 				height: 350px;
-			  border: 5px solid black;
+			  border: 3px solid #228CDB;
 			  margin: 0 auto;
 
 				img{

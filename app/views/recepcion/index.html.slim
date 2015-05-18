@@ -3,5 +3,11 @@
 		.container
 			h2 Recepcion
 
-h1
-	= link_to "Administrar Citas", cita_path, target: "blank"
+.about-us.admin-system
+	.container
+		.content-admin-sections
+			.admin-section
+				.admin-header-section
+					=image_tag("citas.png")
+					= link_to cita_path, target: "blank"
+						span	Administrar Citas

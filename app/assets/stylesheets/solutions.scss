@@ -16,16 +16,25 @@
 			margin-top: 0;
 		}
 
+		@media (max-width: 850px){
+			.column-about{
+				width: 100%!important;
+				.image-about{
+					width: 100%!important;
+				}
+			}
+		}
+
 		.column-about{
 			width: 100%;
 			display: inline-block;
 			text-align: center;
-			margin: 20px;
+			// margin: 20px;
 
 			.image-about{
 				width: 600px;
 				height: 350px;
-			  border: 5px solid black;
+			  border: 5px solid #228CDB;
 			  margin: 0 auto;
 
 				img{
