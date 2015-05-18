@@ -38,13 +38,16 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', minutos_habile, target: "blank"
-                  td
+                      = link_to minutos_habile, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_minutos_habile_path(minutos_habile), target: "blank"
-                  td
-                    = button_to 'Eliminar', minutos_habile, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      = link_to edit_minutos_habile_path(minutos_habile), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to minutos_habile, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
 
         br

@@ -40,7 +40,7 @@ div.btn.btn-default{
     float: right;
     margin: 10px 0;
     color: #fff;
-	  background-color: #337ab7;
+	  background-color: #228CDB;
 	  border-color: #2e6da4;
   }
 }
@@ -87,7 +87,7 @@ div.btn.btn-default{
 
 			.intro-heading-contact{
 				margin-bottom: 50px;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				font-family: "Montserrat" ,Helvetica,Arial,sans-serif;
 				font-size: 15px;
 				font-weight: 700;
@@ -96,13 +96,13 @@ div.btn.btn-default{
 				p{
 					height: 15px;
 					text-align: left;
-					text-transform: capitalize;
+					// text-transform: capitalize;
 					color: #7C7B7B;
 				  font-weight: 100;
 					strong{
 						color: #000;
 						margin-right: 10px;
-						text-transform: uppercase;
+						// text-transform: uppercase;
 					}
 				}
 			}
@@ -175,4 +175,80 @@ li.user:hover {
 
 #section2{
 	margin-top: -10px;
+}
+
+.col-md-4.super_user{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content-admin-sections{
+	text-align: center;
+
+	.admin-section{
+	  width: 332px;
+	  background-color: #f6f9fa;
+	  padding: 20px 0px;
+	  text-align: left;
+	  border-radius: 3px;
+	  margin: 5px;
+	  display: inline-block;
+
+	  .admin-header-section{
+	  	display: block;
+	  	text-align: left;
+  		padding: 0px 20px;
+
+	  	img{
+				height: 30px;
+				display: inline-block;
+				margin-right: 10px;
+	  	}
+
+	  	a{
+	  		color: #626F7B;
+	  		font-size: 20px;
+	  		display: inline-block;
+	  		text-decoration: none;
+
+	  		&:hover{
+	  			color: #3c4c5b;
+	  		}
+	  	}
+	  }
+	}
+}
+
+body.admin_system{
+  background: #FFF;
+}
+
+.table-responsive{
+	margin-top: 10px;
+	table{
+
+		tr:nth-child(odd){
+		}
+
+		tr{
+		  background: #F2F3F3;
+		}
+		td a, td button{
+			padding: 6px!important;
+		}
+
+		i{
+			font-size: 20px;
+			vertical-align: middle;
+		}
+	}
+}
+
+#contacts-form{
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.btn-crud{
+	width: 47px;
 }

@@ -12,5 +12,27 @@
     .btn.btn-default
       = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
-== render 'form'
+= form_for @dia_habil do |f|
+  - if @dia_habil.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@dia_habil.errors.count, "error")} prohibited this dia_habil from being saved:"
+      ul
+        - @dia_habil.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Dia
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Nombre
+              = f.text_field :nombre, class: "form-control", disabled: "true"
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"
+
 

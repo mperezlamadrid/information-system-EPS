@@ -18,10 +18,7 @@
               tr
                 th Tipo documento
                 th Documento
-                th Primer nombre
-                th Segundo nombre
-                th Primer apellido
-                th Segundo apellido
+                th Nombre
                 th Fecha Nacimiento
                 th Genero
                 th Direccion
@@ -36,10 +33,8 @@
                 tr
                   td = paciente.tipo_documento
                   td = paciente.documento
-                  td = paciente.pri_nombre
-                  td = paciente.seg_nombre
-                  td = paciente.pri_apellido
-                  td = paciente.seg_apellido
+                  td
+                    | #{paciente.pri_nombre} #{paciente.seg_nombre} #{paciente.pri_apellido} #{paciente.seg_apellido}
                   td = paciente.nacimiento
                   td
                     - if paciente.genero == "M"
@@ -57,11 +52,14 @@
                       | Inactivo
                   td
                     .btn.btn-primary
-                      = link_to 'Ver', paciente, target: "blank"
+                      = link_to paciente, target: "blank"
+                        i.fa.fa-eye
                   td
                     .btn.btn-success
-                      = link_to 'Editar', edit_paciente_path(paciente), target: "blank"
+                      = link_to edit_paciente_path(paciente), target: "blank"
+                        i.fa.fa-pencil-square-o
                   td
-                    = button_to 'Eliminar', paciente, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                    = button_to paciente, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
 
         br

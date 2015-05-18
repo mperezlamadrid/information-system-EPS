@@ -36,13 +36,16 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', hora_habil, target: "blank"
-                  td
+                      = link_to hora_habil, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_hora_habil_path(hora_habil), target: "blank"
-                  /td
-                   / = button_to 'Eliminar', dia_habil, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      = link_to edit_hora_habil_path(hora_habil), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  / td.btn-crud
+                  /   = button_to usuario_path(usuario), method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                  /     i.fa.fa-trash
 
         br

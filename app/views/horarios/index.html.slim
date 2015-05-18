@@ -33,13 +33,15 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', horario, target: "blank"
-                  td
+                      = link_to horario, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_horario_path(horario), target: "blank"
-                  td
-                    = button_to 'Eliminar', horario, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
-
+                      = link_to edit_horario_path(horario), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to horario, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
         br

@@ -4,6 +4,27 @@ header
 			= link_to root_path
 				=image_tag "logo.png"
 		.pull-right
+			.nav.hide-list-header
+				ul.principal-navigation
+					li
+						a href="" ...
+						ul.sub-menu
+							li
+								= link_to("Acerca de nosotros", about_us_path, target: 'blank')
+							li
+								= link_to("Soluciones", solutions_path, target: 'blank')
+							li
+								a href="mailto:eps.majj@gmail.com" Contactanos
+							-if user_signed_in?
+								li
+									= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete)
+								li
+									= link_to('Editar Perfil', editar_perfil_index_path, target: 'blank')
+							-else
+								li
+									= link_to("Crear Usuario", create_user_path, :class => 'navbar-link', target: 'blank')
+								li
+									= link_to("Iniciar Sesión", new_user_session_path, :class => 'navbar-link')
 			.nav
 				ul.principal-navigation
 					li

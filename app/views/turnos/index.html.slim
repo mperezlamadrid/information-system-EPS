@@ -43,13 +43,15 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', turno, target: "blank"
-                  td
+                      = link_to turno, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_turno_path(turno), target: "blank"
-                  td
-                    = button_to 'Eliminar', turno, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
-
+                      = link_to edit_turno_path(turno), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to turno, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
         br

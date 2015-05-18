@@ -12,4 +12,25 @@
     .btn.btn-default
       = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
 
-== render 'form'
+= form_for @hora_habil do |f|
+  - if @hora_habil.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@hora_habil.errors.count, "error")} prohibited this hora_habil from being saved:"
+      ul
+        - @hora_habil.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Hora
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Hora
+              = f.number_field :hora, class: "form-control", disabled: "true"
+            .field
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

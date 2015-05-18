@@ -3,42 +3,66 @@
 		.container
 			h2  Administracion del sistema
 
-.about-us
+.about-us.admin-system
 	.container
-		ul.list-group
-		  li.list-group-item.col-md-6
-		  	= link_to pacientes_path, target: "blank"
-		  		spsn	Administrar Paciente
-		  li.list-group-item.col-md-6
-		  	= link_to convenios_path, target: "blank"
-		  		span Administrar Convenio
-		  li.list-group-item.col-md-6
-		  	= link_to specialities_path, target: "blank"
-		  		span Administrar Especialidad
-			li.list-group-item.col-md-6
-				= link_to servicios_path, target: "blank"
-					span Administrar Servicio
-			li.list-group-item.col-md-6
-				= link_to usuarios_path, target: "blank"
-					span Administrar Usuario
-			li.list-group-item.col-md-6
-				= link_to dia_habils_path, target: "blank"
-					span Ver Dias
-			li.list-group-item.col-md-6
-				= link_to minutos_habiles_path, target: "blank"
-					span Ver Minutos Habiles
-			li.list-group-item.col-md-6
-				= link_to hora_habils_path, target: "blank"
-					span Ver Horas Habiles
-			li.list-group-item.col-md-6
-				= link_to turnos_path, target: "blank"
-					span Administrar Horario
-			li.list-group-item.col-md-6
-				= link_to horarios_path, target: "blank"
-					span Administrar Turno
-			li.list-group-item.col-md-6
-				= link_to sedes_path, target: "blank"
-					span Administrar Sede
-			li.list-group-item.col-md-6
-				= link_to consultorios_path, target: "blank"
-					span Administrar Consultorio
+		.content-admin-sections
+			.admin-section
+				.admin-header-section
+					=image_tag("pacientes.png")
+					= link_to pacientes_path, target: "blank"
+						span	Administrar Pacientes
+			.admin-section
+				.admin-header-section
+					=image_tag("convenios.png")
+					= link_to convenios_path, target: "blank"
+						span Administrar Convenios
+			.admin-section
+				.admin-header-section
+					=image_tag("especialidades.png")
+					= link_to specialities_path, target: "blank"
+						span Administrar Especialidades
+			.admin-section
+				.admin-header-section
+					=image_tag("servicios.png")
+					= link_to servicios_path, target: "blank"
+						span Administrar Servicios
+			.admin-section
+				.admin-header-section
+					=image_tag("usuarios.png")
+					= link_to usuarios_path, target: "blank"
+						span Administrar Usuarios
+			.admin-section
+				.admin-header-section
+					=image_tag("dias.png")
+					= link_to dia_habils_path, target: "blank"
+						span Ver Dias
+			.admin-section
+				.admin-header-section
+					=image_tag("minutos.png")
+					= link_to minutos_habiles_path, target: "blank"
+						span Ver Minutos Habiles
+			.admin-section
+				.admin-header-section
+					=image_tag("horas.png")
+					= link_to hora_habils_path, target: "blank"
+						span Ver Horas Habiles
+			.admin-section
+				.admin-header-section
+					=image_tag("horarios.png")
+					= link_to turnos_path, target: "blank"
+						span Administrar Horarios
+			.admin-section
+				.admin-header-section
+					=image_tag("turnos.png")
+					= link_to horarios_path, target: "blank"
+						span Administrar Turnos
+			.admin-section
+				.admin-header-section
+					=image_tag("sedes.png")
+					= link_to sedes_path, target: "blank"
+						span Administrar Sedes
+			.admin-section
+				.admin-header-section
+					=image_tag("consultorios.png")
+					= link_to consultorios_path, target: "blank"
+						span Administrar Consultorios

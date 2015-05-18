@@ -31,15 +31,17 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', servicio, target: "blank"
-                  td
+                      = link_to servicio, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_servicio_path(servicio), target: "blank"
-                  td
-                    = button_to 'Eliminar', servicio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
-
+                      = link_to edit_servicio_path(servicio), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to servicio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
         br
 
 

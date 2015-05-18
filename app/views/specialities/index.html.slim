@@ -31,13 +31,16 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', speciality, target: "blank"
-                  td
+                      = link_to speciality, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_speciality_path(speciality), target: "blank"
-                  td
-                    = button_to 'Eliminar', speciality, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      = link_to edit_speciality_path(speciality), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to speciality, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
 
         br

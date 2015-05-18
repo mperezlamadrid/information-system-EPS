@@ -33,13 +33,16 @@
                       | Activo
                     -else
                       | Inactivo
-                  td
+                  td.btn-crud
                     .btn.btn-primary
-                      = link_to 'Ver', consultorio, target: "blank"
-                  td
+                      = link_to consultorio, target: "blank"
+                        i.fa.fa-eye
+                  td.btn-crud
                     .btn.btn-success
-                      = link_to 'Editar', edit_consultorio_path(consultorio), target: "blank"
-                  td
-                    = button_to 'Eliminar', consultorio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      = link_to edit_consultorio_path(consultorio), target: "blank"
+                        i.fa.fa-pencil-square-o
+                  td.btn-crud
+                    = button_to consultorio, method: :delete, data: {:confirm => 'Are you sure?'}, class: "btn btn-danger"
+                      i.fa.fa-trash
 
         br

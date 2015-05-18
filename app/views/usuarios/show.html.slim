@@ -13,29 +13,28 @@
       .intro-lead-in-contact #{@usuario.first_name} #{@usuario.last_name}
       .intro-heading-contact
         p
-          strong Nombre de usuario:
+          strong Email:
+          = @usuario.email
+        p
+          strong Usuario:
           = @usuario.username
         p
           strong Cargo:
           = @usuario.role
-        p
-          strong Email:
-          = @usuario.email
         / p
         /   strong Password:
         /   = @usuario.password
         / p
         /   strong Password confirmation:
         /   = @usuario.password_confirmation
-        p
-          strong Especialidad:
-          -if @usuario.role == "Medico"
+        -if @usuario.role == "Medico"
+          p
+            strong Especialidad:
             = @usuario.specialty
-          -else
-            | Ninguna
-        p
-          strong Numero de tarjeta profesional:
-          = @usuario.pro_card
+        -if @usuario.role == "Medico"
+          p
+            strong Tarjeta profesional:
+            = @usuario.pro_card
         / p
         /   strong Contraseña de administrador:
         /   = @usuario.pass_admin
