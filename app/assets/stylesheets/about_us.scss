@@ -3,10 +3,32 @@ hr{
 }
 
 .about-us{
-	padding: 40px;
+	// padding: 40px 0px;
+
+	.about{
+		padding: 40px;
+		background-color: #00AEED;
+
+		h1, p{
+			color: #FFF;
+		}
+
+		p{
+			font-size: 20px;
+		}
+	}
 
 	.title-page{
 		text-align: center;
+
+		h1{
+			margin-bottom: 40px;
+		}
+	}
+
+	.asociados{
+		background-color: #FFF;
+		padding: 30px;
 	}
 
 	.body-page{
@@ -14,7 +36,20 @@ hr{
 	}
 
 	.footer-page{
-		margin-top: 50px;
+		// margin-top: 50px;
+		background-color: #E7E7E8;
+		padding: 40px;
+		text-align: center;
+
+		h1{
+			margin-bottom: 40px;
+			color: #000;
+		}
+
+		span{
+			font-size: 18px;
+			color: #000;
+		}
 
 		@media (max-width: 850px){
 			.column-about{
@@ -24,15 +59,17 @@ hr{
 		}
 
 		.column-about{
-			width: 377px;
-			display: inline-block;
-			text-align: center;
-			vertical-align: top;
+			  width: 357px;
+			  display: inline-block;
+			  text-align: center;
+			  vertical-align: top;
+			  margin: 20px;
 
 			.image-about{
+				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 				width: 280px;
 				height: 350px;
-			  border: 3px solid #228CDB;
 			  margin: 0 auto;
 
 				img{
