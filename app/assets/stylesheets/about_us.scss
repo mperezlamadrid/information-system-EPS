@@ -29,12 +29,20 @@ hr{
 	.asociados{
 		background-color: #FFF;
 		padding: 30px;
+
+		@media (max-width: 730px){
+			display: none;
+		}
 	}
 
 	.body-page{
 		text-align: center;
 		margin: 0 auto;
 		width: 700px;
+
+		@media (max-width: 900px){
+			width: 100%;
+		}
 	}
 
 	.footer-page{
@@ -66,6 +74,10 @@ hr{
 			  text-align: center;
 			  vertical-align: top;
 			  margin: 20px;
+
+			  @media (max-width: 500px){
+					margin: 0px;
+				}
 
 			.image-about{
 				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);

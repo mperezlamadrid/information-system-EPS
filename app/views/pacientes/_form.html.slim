@@ -46,7 +46,7 @@
             .field.form-group
               = f.label :Regimen
               = f.select :regimen, options_for_select([['Subsidiado', 1],['Contributivo', 2]]), {}, { class: 'form-control selectpicker', placeholder: 'Regimen' }
-            .field.form-group
+            .field.form-group.hide-fields
               = f.label :Numero_de_ficha_del_sisben
               = f.text_field :num_ficha_sisben, class: "form-control"
             .field.form-group
