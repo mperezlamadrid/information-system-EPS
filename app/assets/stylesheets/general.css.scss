@@ -227,6 +227,12 @@ body.admin_system{
 	margin-top: 10px;
 	table{
 
+		thead tr{
+			background-color: #055692;
+			color: #FFF;
+			font-size: 16px;
+		}
+
 		tr:nth-child(odd){
 		}
 
@@ -251,4 +257,8 @@ body.admin_system{
 
 .btn-crud{
 	width: 47px;
+}
+
+.btn-primary, .btn-default, .btn-danger, .btn-success, .btn-info{
+	border: 0px solid!important;
 }

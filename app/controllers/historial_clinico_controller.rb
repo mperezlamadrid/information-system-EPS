@@ -9,7 +9,7 @@ class HistorialClinicoController < ApplicationController
 	private
 
 	def can_edit
-		if current_user.role == "Medico" || current_user.role == "SIAU"
+		if current_user.role == "Medico" || current_user.role == "SIAU" || current_user.role == "Super"
 			return true
 		else
 			redirect_to root_path

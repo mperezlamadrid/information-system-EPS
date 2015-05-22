@@ -7,7 +7,7 @@ header
 			.nav.hide-list-header
 				ul.principal-navigation
 					li
-						a href=""
+						a.header-link href=""
 							i.fa.fa-bars
 						ul.sub-menu
 							li
@@ -29,7 +29,7 @@ header
 			.nav
 				ul.principal-navigation
 					li
-						a href="" Nuestra EPS
+						a.header-link href="" Nuestra EPS
 						ul.sub-menu
 							li
 								= link_to("Acerca de nosotros", about_us_path, target: 'blank')
@@ -41,18 +41,18 @@ header
 						/ li
 						/ 	= link_to("Dashboard", root_path)
 						li
-							= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete)
+							= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete, class: "header-link")
 						li.user
-							a href=""
+							a.header-link href=""
 								strong
 									= "#{current_user.first_name} #{current_user.last_name}"
 							ul.sub-menu
 								li
-									= link_to('Edit profile', editar_perfil_index_path, target: 'blank')
+									= link_to('Edit profile', editar_perfil_index_path, target: 'blank', class: "header-link")
 					-else
 						/li
 							/= link_to("Crear Usuario", create_user_path, :class => 'navbar-link', target: 'blank')
 							/ = link_to("Crear Usuario", new_user_registration_path, :class => 'navbar-link')
 						li.login-button
-							= link_to("Iniciar Sesión", new_user_session_path, :class => 'navbar-link')
+							= link_to("Iniciar Sesión", new_user_session_path, :class => 'navbar-link', class: "header-link")
 .header-separator
