@@ -11,7 +11,7 @@ body{
   // background: radial-gradient(ellipse at center,  #e4f5fc 28%,#2ab0ed 99%); /* W3C */
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background: #D6EDFF;
-  font-family: "proxima";
+  font-family: "proxima-light"!important;
 
   textarea { resize:none; }
 
@@ -150,6 +150,14 @@ header .content{
   text-align: center;
   color: #FFF;
   padding: 10px;
+
+  .title{
+    h2{
+      text-transform: uppercase;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .content-eps-landing{
@@ -209,7 +217,7 @@ header .content{
             Servicios
 // =========================== */
 .our-solutions{
-  background: #FFFDF7;
+  background: #FFF;
 
   h4{
     font-size: 20px;
@@ -234,7 +242,7 @@ header .content{
 }
 
 .solutions-imges{
-  background: #A5E4FF;
+  background: #228CDB;
   border-radius: 50%;
   width: 164px;
   height: 163px;

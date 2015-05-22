@@ -23,9 +23,9 @@
                 th Genero
                 th Direccion
                 th Telefono
-                th Regimen
-                th Numeero ficha sisben
-                th Estado
+                / th Regimen
+                / th Numero ficha sisben
+                / th Estado
                 th colspan="3"
 
             tbody
@@ -43,13 +43,13 @@
                       | Femenino
                   td = paciente.direccion
                   td = paciente.telefono
-                  td = paciente.regimen
-                  td = paciente.num_ficha_sisben
-                  td
-                    - if paciente.estado == "A"
-                      | Activo
-                    -else
-                      | Inactivo
+                  / td = paciente.regimen
+                  / td = paciente.num_ficha_sisben
+                  / td
+                  /   - if paciente.estado == "A"
+                  /     | Activo
+                  /   -else
+                  /     | Inactivo
                   td
                     .btn.btn-primary
                       = link_to paciente, target: "blank"

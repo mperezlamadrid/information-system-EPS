@@ -224,13 +224,23 @@ body.admin_system{
 }
 
 .table-responsive{
-	margin-top: 10px;
+	margin-top: 30px;
 	table{
 
 		thead tr{
-			background-color: #055692;
+			background-color: #337AB7;
 			color: #FFF;
 			font-size: 16px;
+
+			th{
+			  padding: 11px;
+			  font-weight: 100;
+			  border-bottom: 0;
+			}
+		}
+
+		tbody td{
+			vertical-align: middle;
 		}
 
 		tr:nth-child(odd){
@@ -252,7 +262,7 @@ body.admin_system{
 
 #contacts-form{
   margin-top: -10px;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .btn-crud{
@@ -261,4 +271,12 @@ body.admin_system{
 
 .btn-primary, .btn-default, .btn-danger, .btn-success, .btn-info{
 	border: 0px solid!important;
+}
+
+.bootstrap-select{
+	border: 1px solid #CCC!important;
+}
+
+.form-control{
+	box-shadow: none!important;
 }
