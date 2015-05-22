@@ -280,3 +280,7 @@ body.admin_system{
 .form-control{
 	box-shadow: none!important;
 }
+
+body.super_user, body.administracion, body.siau, body.medico_general, body.enfermeria, body.medico_especializada{
+	background-color: #FFF;
+}
