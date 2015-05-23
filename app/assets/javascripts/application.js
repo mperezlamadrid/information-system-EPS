@@ -40,8 +40,19 @@ $(function(){
 		};
 	};
 
+	var checkFieldsPregunta = function(){
+		if ($("#preguntum_tipo").val() == "Cerrada") {
+			$("#preguntum_respuestas_cerrada").parent(".form-group").removeClass("hide-fields");
+		};
+
+		if ($("#preguntum_tipo").val() == "No Cerrada") {
+			$("#preguntum_respuestas_cerrada").parent(".form-group").addClass("hide-fields");
+		};
+	};
+
 	checkFieldsUser();
 	checkFieldsPatiente();
+	checkFieldsPregunta();
 
 	$('#user_role').on('change', function() {
 	  checkFieldsUser();
@@ -49,6 +60,10 @@ $(function(){
 
 	$('#paciente_regimen').on('change', function() {
 	  checkFieldsPatiente();
+	});
+
+	$('#preguntum_tipo').on('change', function() {
+	  checkFieldsPregunta();
 	});
 
 });

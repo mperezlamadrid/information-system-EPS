@@ -1,0 +1,28 @@
+= form_for @preguntum do |f|
+  - if @preguntum.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@preguntum.errors.count, "error")} prohibited this preguntum from being saved:"
+      ul
+        - @preguntum.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Respuesta Cerrada
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :pregunta
+              = f.text_field :pregunta, class: "form-control"
+            .field.form-group
+              = f.label :tipo
+              = f.select :tipo, options_for_select(['Cerrada','No Cerrada']), {}, { class: 'form-control selectpicker', placeholder: 'CerradaNoCerrda' }
+            .field.form-group.hide-fields
+              = f.label :respuestas_cerrada
+              = f.select :respuestas_cerrada, options_for_select(@respuestas.map{|s| [s.respuesta, s.id]}), {}, { class: 'form-control selectpicker', placeholder: 'Tipo de Documento' }
+            .field.form-group
+              = f.label :estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

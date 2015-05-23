@@ -1,0 +1,29 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_preguntum_path(@preguntum), target: "blank"
+    .btn.btn-default
+      = link_to 'Preguntas', pregunta_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact RESPUESTA CERRADA
+      .intro-heading-contact
+				p
+					strong Respuesta:
+					= @preguntum.pregunta
+				p
+					strong Tipo:
+					= @preguntum.tipo
+				p
+					strong Respuestas Cerrada:
+					= @preguntum.respuestas_cerrada[:respuesta]
+				p
+					strong Estado:
+					- if @preguntum.estado == "A"
+						| Activo
+					-else
+						| Inactivo
