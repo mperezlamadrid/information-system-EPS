@@ -1,0 +1,23 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar Convenio', edit_formato_historial_clinico_path(@formato_historial_clinico), target: "blank"
+    .btn.btn-default
+      = link_to 'Formatos', formato_historial_clinicos_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact #{@formato_historial_clinico.nombre}
+      .intro-heading-contact
+      	p
+          strong Descripcion:
+          = @formato_historial_clinico.descripcion
+        p
+          strong Estado:
+          - if @formato_historial_clinico.estado == "A"
+            | Activo
+          -else
+            | Inactivo

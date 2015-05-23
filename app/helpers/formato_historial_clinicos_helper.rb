@@ -1,0 +1,2 @@
+module FormatoHistorialClinicosHelper
+end

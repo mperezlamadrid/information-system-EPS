@@ -1,0 +1,25 @@
+= form_for @formato_historial_clinico do |f|
+  - if @formato_historial_clinico.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@formato_historial_clinico.errors.count, "error")} prohibited this formato_historial_clinico from being saved:"
+      ul
+        - @formato_historial_clinico.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Convenio
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Nombre
+              = f.text_field :nombre, class: "form-control"
+            .field.form-group
+              = f.label :Descripcion
+              = f.text_area :descripcion, class: "form-control"
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

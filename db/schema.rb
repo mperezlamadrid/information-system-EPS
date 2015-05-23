@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523203253) do
+ActiveRecord::Schema.define(version: 20150523232219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,14 @@ ActiveRecord::Schema.define(version: 20150523203253) do
   create_table "documento_identidads", force: true do |t|
     t.string   "nombre"
     t.string   "siglas"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "formato_historial_clinicos", force: true do |t|
+    t.string   "nombre"
+    t.string   "descripcion"
+    t.string   "estado"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
