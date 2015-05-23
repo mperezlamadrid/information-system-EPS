@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :respuestas_cerradas
+
   resources :cita
 
   resources :horarios

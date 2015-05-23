@@ -1,0 +1,22 @@
+= form_for @respuestas_cerrada do |f|
+  - if @respuestas_cerrada.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@respuestas_cerrada.errors.count, "error")} prohibited this respuestas_cerrada from being saved:"
+      ul
+        - @respuestas_cerrada.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Respuesta Cerrada
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Respuesta
+              = f.text_field :respuesta, class: "form-control"
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"
