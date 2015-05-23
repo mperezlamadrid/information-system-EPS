@@ -1,0 +1,25 @@
+= form_for @opciones_respuestas_cerrada do |f|
+  - if @opciones_respuestas_cerrada.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@opciones_respuestas_cerrada.errors.count, "error")} prohibited this opciones_respuestas_cerrada from being saved:"
+      ul
+        - @opciones_respuestas_cerrada.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Opciones de respuesta cerrada
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Respuestas_cerrada
+              = f.select :respuestas_cerrada, options_for_select(@respuestas.map{|s| [s.respuesta, s.id]}), {}, { class: 'form-control selectpicker', placeholder: 'Tipo de Documento' }
+            .field.form-group
+              = f.label :Opcion_de_la_respuesta
+              = f.text_field :opcion, class: "form-control"
+            .field.form-group
+              = f.label :estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

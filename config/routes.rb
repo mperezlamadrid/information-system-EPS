@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :opciones_respuestas_cerradas
+
   resources :respuestas_cerradas
 
   resources :cita

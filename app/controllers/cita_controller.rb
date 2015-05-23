@@ -1,4 +1,5 @@
 class CitaController < ApplicationController
+  before_filter :authenticate_user!
   before_action :set_citum, only: [:show, :edit, :update, :destroy]
   before_filter :can_edit_database
 

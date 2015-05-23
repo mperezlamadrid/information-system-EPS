@@ -1,0 +1,26 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar', edit_opciones_respuestas_cerrada_path(@opciones_respuestas_cerrada), target: "blank"
+    .btn.btn-default
+      = link_to 'Opciones de Respuestas', opciones_respuestas_cerradas_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact RESPUESTA CERRADA
+      .intro-heading-contact
+				p
+					strong Respuestas Cerrada:
+					= @opciones_respuestas_cerrada.respuestas_cerrada[:respuesta]
+				p
+					strong Opcion:
+					= @opciones_respuestas_cerrada.opcion
+				p
+					strong Estado:
+					- if @opciones_respuestas_cerrada.estado == "A"
+						| Activo
+					-else
+						| Inactivo
