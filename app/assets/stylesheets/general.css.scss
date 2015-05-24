@@ -285,3 +285,44 @@ body.admin_system{
 body.super_user, body.administracion, body.siau, body.medico_general, body.enfermeria, body.medico_especializada{
 	background-color: #FFF;
 }
+
+.contenedor-citas{
+	text-align: center;
+	margin-top: 20px;
+  margin-bottom: 60px;
+
+  .table-responsive{
+  	margin-top: 0px;
+  }
+
+	.contenedor-verificacion{
+		display: inline-block;
+	  width: 1100px;
+	  height: 470px;
+	  margin: 0 auto;
+	  background-color: #fff;
+	  border-radius: 9px;
+	  padding: 20px;
+
+	  .body-ver{
+	  	position: relative;
+  	  background-color: #eee;
+		  width: 100%;
+		  height: calc(100% - 70px);
+		  border-radius: 5px;
+		  overflow: scroll;
+	    margin-top: 10px;
+
+	    .dont-found{
+    	  position: absolute;
+			  left: 0;
+			  right: 0;
+			  top: 100px;
+
+			  p{
+			  	font-size: 20px;
+			  }
+	    }
+	  }
+	}
+}

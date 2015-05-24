@@ -1,0 +1,55 @@
+.verificar-citas ng-controller='CitasController' ng-cloak="true"
+	.content-eps-landing-dash
+	  .title
+	    .container
+	      h2  Verificar Cita
+
+	.container
+	  .row-btn
+	    .btn.btn-default
+	      = link_to 'Ir Recepcion', recepcion_index_path, target: "blank"
+
+	.container
+		.contenedor-citas
+			.contenedor-verificacion
+				.header-ver
+					.search-main
+						.search-right
+							form
+								input.btn.btn-info type="submit" value="Buscar" ng-click="getCitas(documento)"
+								input.form-control type="text" name="documento" ng-model="documento" placeholder="Documento de Identidad"
+				.body-ver
+					.table-responsive
+						table.table.table-striped
+							thead
+								tr
+									th Fecha
+									th Horario
+									th Paciente
+									th Tipo
+									th Especialidad
+									th Estado
+									th colspan="3"
+							tbody
+								tr ng-repeat="cita in citas"
+									td
+										| {{ cita.fecha }}
+									td
+										| {{ cita.horario }}
+									td
+										| {{ cita.paciente }}
+									td
+										| {{ cita.tipo }}
+									td
+										| {{ cita.especialidad }}
+									td
+										| {{ cita.estado }}
+									td
+										input.btn.btn-success type="submit" value="Bajar" ng-click="bajarCita(cita.id)"
+					.dont-found ng-show="show_image_not_found"
+						p Lo Sentimos!
+						p
+							| {{ message_found }}
+						=image_tag("find.png")
+
+

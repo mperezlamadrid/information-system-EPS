@@ -73,6 +73,11 @@ Rails.application.routes.draw do
       get :show_user_data
     end
   end
+  resources :verificar_citas , only: [:index] do
+    collection do
+      get :get_citas
+    end
+  end
 
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions
