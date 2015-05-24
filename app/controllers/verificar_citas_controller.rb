@@ -23,7 +23,18 @@ class VerificarCitasController < ApplicationController
 
 	def bajar_cita
 		@cita = Citum.find(params[:id])
-		render :bajar_cita
+		@buscar_registro = RegistroAtencion.where(cita_id: params[:id])
+		if @buscar_registro.count == 0
+			@registro = RegistroAtencion.new(
+				fecha_inicio: Time.now(),
+				cita_id: @cita.id,
+				estado: "En Proceso"
+			)
+			@registro.save
+			render :bajar_cita
+		else
+			render json: { error: "La cita ya se ha dado de baja" }
+		end
 	end
 
   private

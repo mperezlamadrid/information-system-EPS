@@ -20,6 +20,11 @@ angular.module('EpsMAJJ') .controller('CitasController', ['$scope', '$http', '$f
 	$scope.bajarCita = function(cita_id){
 		$http.get("/verificar_citas/bajar_cita?id="+cita_id)
 			.success(function(data) {
+				if (data["error"] == undefined) {
+					alert("Se ha dado de baja la cita");
+				}else{
+					alert(data["error"]);
+				};
 		  }).error(function(){ });
 	};
 }]);

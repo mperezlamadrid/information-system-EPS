@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150524000556) do
+ActiveRecord::Schema.define(version: 20150524024010) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -138,6 +138,15 @@ ActiveRecord::Schema.define(version: 20150524000556) do
   end
 
   add_index "pregunta", ["respuestas_cerrada_id"], name: "index_pregunta_on_respuestas_cerrada_id", using: :btree
+
+  create_table "registro_atencions", force: true do |t|
+    t.date     "fecha_inicio"
+    t.date     "fecha_final"
+    t.integer  "cita_id"
+    t.string   "estado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "respuestas_cerradas", force: true do |t|
     t.string   "respuesta"
