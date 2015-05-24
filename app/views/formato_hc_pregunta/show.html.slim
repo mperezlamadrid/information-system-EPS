@@ -1,0 +1,29 @@
+.container
+  .row-btn
+    .btn.btn-default
+      = link_to 'Editar Formato', edit_formato_hc_preguntum_path(@formato_hc_preguntum), target: "blank"
+    .btn.btn-default
+      = link_to 'Formatos de Preguntas', formato_hc_pregunta_path, target: "blank"
+    .btn.btn-default
+      = link_to 'Ir Administracion', admin_system_index_path, target: "blank"
+
+.contact-show
+  .content-contact-show
+    .intro-text-contact
+      .intro-lead-in-contact Formato HC de Pregunta
+      .intro-heading-contact
+      	p
+          strong Formato HC:
+          = @formato_hc_preguntum.formato_hc
+        p
+          strong Pregunta:
+          = @formato_hc_preguntum.pregunta
+        p
+          strong Obligatorio?:
+          = @formato_hc_preguntum.obligatorio
+        p
+          strong Estado:
+          - if @formato_hc_preguntum.estado == "A"
+            | Activo
+          -else
+            | Inactivo

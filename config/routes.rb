@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :formato_hc_pregunta
+
   resources :formato_historial_clinicos
 
   resources :pregunta

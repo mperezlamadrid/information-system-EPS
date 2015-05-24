@@ -1,0 +1,28 @@
+= form_for @formato_hc_preguntum do |f|
+  - if @formato_hc_preguntum.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@formato_hc_preguntum.errors.count, "error")} prohibited this formato_hc_preguntum from being saved:"
+      ul
+        - @formato_hc_preguntum.errors.full_messages.each do |message|
+          li = message
+
+  .container
+    .container_forms
+      .panel.panel-default
+        .panel-heading
+          h4 Informacion del Convenio
+        .panel-body
+          .form
+            .field.form-group
+              = f.label :Formato_de_historial_clinico
+              = f.select :formato_hc, options_for_select(@formatos.map{|s| [s.nombre]}), {}, { class: 'form-control selectpicker', placeholder: 'Tipo de Documento' }
+            .field.form-group
+              = f.label :Pregunta
+              = f.select :pregunta, options_for_select(@preguntas.map{|s| [s.pregunta]}), {}, { class: 'form-control selectpicker', placeholder: 'Tipo de Documento' }
+            .field.form-group
+              = f.label :Campo_Obligatorio?
+              = f.select :obligatorio, options_for_select(['SI','NO']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .field.form-group
+              = f.label :Estado
+              = f.select :estado, options_for_select(['A','I']), {}, { class: 'form-control selectpicker', placeholder: 'Estado' }
+            .sign-button = f.submit "Enviar"

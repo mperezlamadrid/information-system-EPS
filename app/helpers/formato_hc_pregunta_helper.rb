@@ -1,0 +1,2 @@
+module FormatoHcPreguntaHelper
+end
