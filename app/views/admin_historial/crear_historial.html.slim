@@ -1,0 +1,92 @@
+.historial-clinico ng-controller='HistorialController' ng-cloak="true"
+	.content-eps-landing-dash
+		.title
+			.container
+				h2 Crear Historial Clinico
+	.container
+	  .row-btn
+	    .btn.btn-default
+	      = link_to 'Ir Historial', historial_clinico_index_path, target: "blank"
+
+	.container
+		.contenedor-historial
+			.header-historial
+				.info-fecha
+					span
+						| #{Time.now().year}-#{Time.now().month}-#{Time.now().day}
+				.info-paciente
+					ul.list-info-paciente
+						li
+							select.selectpicker ng-model="defaultPaciente" ng-options="paciente as (paciente.pri_nombre + ' ' + paciente.pri_apellido + ' ' + paciente.seg_apellido) for paciente in pacientes" selectpicker=""
+						li
+							p
+								strong> D.I.:
+								| {{ defaultPaciente.documento }}
+						li
+							p
+								strong> Direccion:
+								| {{ defaultPaciente.direccion }}
+						li
+							p
+								strong> Nacimiento:
+								| {{ defaultPaciente.nacimiento }}
+						li
+							p
+								strong> Telefono:
+								| {{ defaultPaciente.telefono }}
+						li
+							p
+								strong> Regimen:
+								| {{ defaultPaciente.regimen }}
+						li
+							p
+								strong> Estado:
+								| {{ defaultPaciente.estado == 'A' ? 'Activo' : 'Inactivo' }}
+				.info-paciente
+					ul.buttoms
+						li ng-show="showFormatHc"
+							select.selectpicker ng-model="defaultFormato" ng-options="formato.nombre for formato in formatos" selectpicker="" ng-change="selectFormat(defaultFormato)"
+						li
+							a.btn.btn-success href="" ng-click="showFormat()"
+								i.fa.fa-plus
+						li
+							a.btn.btn-danger href="" ng-click="hideFormat()"
+								i.fa.fa-times
+						/ li
+						/ 	a.btn.btn-primary href=""
+						/ 		i.fa.fa-eye
+						/ li
+						/ 	a.btn.btn-primary href=""
+						/ 		i.fa.fa-eye
+
+			.body-historial
+				.column-left
+					.list-formats ng-show="showFormatHc"
+						span
+							i.fa.fa-chevron-right
+						span
+							| {{ defaultFormato.nombre }}
+				.column-right
+					.content-preguntas
+						.todas-las-preguntas ng-show="showFormatHc"
+							h1 Preguntas Cerradas
+							.contenido ng-repeat="pregunta in cerradas"
+								label
+									| {{ pregunta['pregunta'] }}
+								select ng-model="o" ng-options="o for o in pregunta['opciones']"
+									option value="" ng-if="false"
+
+							h1.margen Preguntas Abiertas
+							.contenido ng-repeat="pregunta in preguntas_abiertas"
+								label
+									| {{ pregunta.pregunta }}
+								input.form-control type="text"
+
+					.footer-bottom
+						a.btn.btn-primary href="" 
+							| Guardar
+						a.btn.btn-danger href="" ng-click="hideFormat()"
+							| Cancelar
+
+
+

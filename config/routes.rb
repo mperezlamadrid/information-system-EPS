@@ -85,6 +85,16 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :admin_historial , only: [:index] do
+    collection do
+      get :crear_historial
+      get :get_pacientes
+      get :get_formatos_hc
+      get :get_formatos_preguntas_cerrada
+      get :get_formatos_preguntas_abierta
+    end
+  end
+
   get '/acerca-de-nosotros' => 'home#about_us', as: :about_us
   get '/soluciones' => 'home#solutions', as: :solutions
   get '/crear-usuario' => 'home#create_user', as: :create_user

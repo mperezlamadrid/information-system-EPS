@@ -27,7 +27,10 @@
                 tr
                   td = preguntum.pregunta
                   td = preguntum.tipo
-                  td = preguntum.respuestas_cerrada[:respuesta]
+                  -if preguntum.tipo == "Cerrada"
+                    td = preguntum.respuestas_cerrada[:respuesta]
+                  -else
+                    td
                   td
                     - if preguntum.estado == "A"
                       | Activo

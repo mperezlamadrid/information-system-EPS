@@ -1,0 +1,1 @@
+json.preguntas_cerradas @preguntas_cerradas
