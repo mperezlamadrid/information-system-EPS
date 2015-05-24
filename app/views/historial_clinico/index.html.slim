@@ -6,13 +6,13 @@
 .about-us.admin-system
 	.container
 		.content-admin-sections
+			/.admin-section
+			/	.admin-header-section
+			/		=image_tag("citas.png")
+			/		= link_to root_path, target: "blank"
+			/			span	Ver Historial Clinico
 			.admin-section
 				.admin-header-section
-					=image_tag("citas.png")
-					= link_to root_path, target: "blank"
-						span	Ver Historial Clinico
-			.admin-section
-				.admin-header-section
-					=image_tag("check_cita.png")
+					=image_tag("historial.png")
 					= link_to crear_historial_admin_historial_index_path, target: "blank"
 						span	Crear Historial Clinico
