@@ -7,7 +7,6 @@ class VerificarCitasController < ApplicationController
 	end
 
 	def get_citas
-		# 1376234892
 		@paciente = Paciente.where(documento: params[:doc_paciente]).first
 
 		if @paciente.present?
@@ -20,6 +19,11 @@ class VerificarCitasController < ApplicationController
 		else
 			render json: {error: "No existe ninguna cita para el paciente o el documento es incorrecto"}
 		end
+	end
+
+	def bajar_cita
+		@cita = Citum.find(params[:id])
+		render :bajar_cita
 	end
 
   private

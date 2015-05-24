@@ -16,4 +16,10 @@ angular.module('EpsMAJJ') .controller('CitasController', ['$scope', '$http', '$f
 				};
 		  }).error(function(){ });
 	};
+
+	$scope.bajarCita = function(cita_id){
+		$http.get("/verificar_citas/bajar_cita?id="+cita_id)
+			.success(function(data) {
+		  }).error(function(){ });
+	};
 }]);

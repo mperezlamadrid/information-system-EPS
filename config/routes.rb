@@ -76,6 +76,7 @@ Rails.application.routes.draw do
   resources :verificar_citas , only: [:index] do
     collection do
       get :get_citas
+      get :bajar_cita
     end
   end
 
