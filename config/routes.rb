@@ -77,6 +77,9 @@ Rails.application.routes.draw do
     collection do
       get :get_citas
       get :bajar_cita
+      get :registros_atencion
+      get :get_registros
+      get :eliminar_registro
     end
   end
 

@@ -37,6 +37,24 @@ class VerificarCitasController < ApplicationController
 		end
 	end
 
+	def registros_atencion
+		@title = "Registros"
+	end
+
+	def get_registros
+		@registros = RegistroAtencion.all
+		if @registros.present?
+			render :get_registros
+		else
+			render json: {error: "No existe ningun registro actualmente"}
+		end
+	end
+
+	def eliminar_registro
+		RegistroAtencion.find(params[:id].to_i).destroy
+		render json: {status: :ok}
+	end
+
   private
   	def can_edit_database
       if current_user.role == "Super" || current_user.role == "SIAU"

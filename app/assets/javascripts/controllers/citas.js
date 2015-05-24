@@ -1,7 +1,20 @@
 angular.module('EpsMAJJ') .controller('CitasController', ['$scope', '$http', '$filter', '$window', '$location', function ($scope, $http, $filter, $window, $location) {
 	$scope.citas = {};
+	$scope.registros = {};
 	$scope.show_image_not_found = false;
+	$scope.empty_register = false;
 	$scope.message_found = "";
+
+	$http.get("/verificar_citas/get_registros")
+		.success(function(data) {
+			$scope.registros = data["registros"];
+			if ($scope.registros == undefined) {
+				$scope.message_found = data["error"];
+				$scope.empty_register = true;
+			}else{
+				$scope.empty_register = false;
+			};
+	  }).error(function(){ });
 
 	$scope.getCitas = function(documento){
 		$http.get("/verificar_citas/get_citas?doc_paciente="+documento)
@@ -26,5 +39,16 @@ angular.module('EpsMAJJ') .controller('CitasController', ['$scope', '$http', '$f
 					alert(data["error"]);
 				};
 		  }).error(function(){ });
+	};
+
+	$scope.eliminarRegistro = function(registro_id){
+		var r = confirm("Estas Seguro que quieres elimiar este registro?");
+
+		if (r == true) {
+			$http.get("/verificar_citas/eliminar_registro?id="+registro_id)
+				.success(function(data) {
+					$window.location.reload();
+			  }).error(function(){ });
+		};
 	};
 }]);

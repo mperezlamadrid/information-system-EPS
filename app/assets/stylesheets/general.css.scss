@@ -326,3 +326,26 @@ body.super_user, body.administracion, body.siau, body.medico_general, body.enfer
 	  }
 	}
 }
+
+.registro-atencion{
+	.contenedor-verificacion{
+		padding: 0px;
+		overflow: scroll;
+		position: relative;
+
+		.dont-found{
+  	  position: absolute;
+		  left: 0;
+		  right: 0;
+		  top: 140px;
+
+		  p{
+		  	font-size: 20px;
+		  }
+    }
+	}
+
+	td{
+		text-align: left;
+	}
+}
