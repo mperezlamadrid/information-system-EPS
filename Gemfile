@@ -32,6 +32,7 @@ gem "font-awesome-rails"
 
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'prerender_rails'
 
 group :development, :test do
   gem 'fuubar'
