@@ -50,6 +50,52 @@ class VerificarCitasController < ApplicationController
 		end
 	end
 
+	def get_registros_atencion
+		if 	current_user.role == "Super" || current_user.role == "SIAU"
+			get_registros
+		else
+			@registros_cita_id = RegistroAtencion.uniq.pluck(:cita_id)
+			@citas = []
+			@registros_cita_id.each do |cita_id|
+				@cita = Citum.find(cita_id)
+				@citas << @cita if @cita.present?
+			end
+			@cita_valida = []
+			@citas.each do |cita|
+				nombre_medico = "#{cita.horario.split(" ")[7]} #{cita.horario.split(" ")[8]}"
+				medico_actual = "#{current_user.first_name} #{current_user.last_name}"
+
+				if nombre_medico == medico_actual
+					@cita_valida << cita.id
+				end
+			end
+			@registros = []
+			@cita_valida.each do |cita_id_valido|
+				@registros << RegistroAtencion.where(cita_id: cita_id_valido).first
+			end
+			if @registros.present?
+				render :get_registros_atencion
+			else
+				render json: {error: "No existe ningun registro actualmente"}
+			end
+		end
+	end
+
+	def atender_cita
+		@registro = RegistroAtencion.find(params[:id])
+
+		if @registro.present?
+			@registro.update_attributes(
+				fecha_final: Time.now(),
+				estado: "Realizada"
+			)
+			@registro.save
+			render :atender_cita
+		else
+			render json: { error: "La cita ya se ha finalizado" }
+		end
+	end
+
 	def eliminar_registro
 		RegistroAtencion.find(params[:id].to_i).destroy
 		render json: {status: :ok}
@@ -57,7 +103,7 @@ class VerificarCitasController < ApplicationController
 
   private
   	def can_edit_database
-      if current_user.role == "Super" || current_user.role == "SIAU"
+      if current_user.role == "Super" || current_user.role == "SIAU" || current_user.role == "Medico" || current_user.role == "Enfermeria"
         return true
       else
         redirect_to root_path

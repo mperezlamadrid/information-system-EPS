@@ -1,4 +1,39 @@
-.content-eps-landing-dash
-	.title
-		.container
-			h2  Atencion al cliente
+.registro-atencion ng-controller='AtencionController' ng-cloak="true"
+	.content-eps-landing-dash
+		.title
+			.container
+				h2  Atencion Medica
+
+	.container
+		.contenedor-citas
+			.contenedor-verificacion
+				h3
+					| Citas para el #{Time.now().day} del mes #{Time.now().month} del #{Time.now().year}
+				.table-responsive
+					table.table.table-striped
+						thead
+							tr
+								th Fecha de Inicio
+								th Fecha de Finalizacion
+								th ID de la Cita
+								th Estado
+								th colspan="3"
+						tbody
+							tr ng-repeat="registro in registros"
+								td
+									| {{ registro.fecha_inicio }}
+								td
+									| {{ registro.fecha_final }}
+								td
+									| {{ registro.cita_id }}
+								td
+									| {{ registro.estado }}
+								td.btn-crud ng-show="registro.estado == 'En Proceso'"
+									input.btn.btn-success type="submit" value="Atender" ng-click="atenderCita(registro.id)"
+								td colspan="3"
+
+				.dont-found ng-show="empty_register"
+					p Lo Sentimos!
+					p
+						| {{ message_found }}
+					=image_tag("empty.png")

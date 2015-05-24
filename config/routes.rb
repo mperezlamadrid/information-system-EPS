@@ -80,6 +80,8 @@ Rails.application.routes.draw do
       get :registros_atencion
       get :get_registros
       get :eliminar_registro
+      get :get_registros_atencion
+      get :atender_cita
     end
   end
 
