@@ -1,0 +1,30 @@
+#formulaMedica.modal.fade aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#exampleModalLabel.modal-title Formula Medica
+      .modal-body
+        form
+          .form-group
+            label.control-label for="recipient-name" Atencion:
+            select.selectpicker.form-control
+              option value="" 1
+              option value="" 2
+              option value="" 3
+          .form-group
+            label.control-label for="message-text" Codigo del medicamento:
+            select.selectpicker.form-control
+              option value="" 0933
+              option value="" 0934
+              option value="" 0934
+          .form-group
+            label.control-label for="message-text" Prescripcion del medicamento:
+            textarea#message-text.form-control
+          .form-group
+            label.control-label for="message-text" Cantidad:
+            input#recipient-name.form-control type="number"
+      .modal-footer
+        button.btn.btn-danger data-dismiss="modal" type="button"  Cerrar
+        button.btn.btn-primary type="button"  Enviar

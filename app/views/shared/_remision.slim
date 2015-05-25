@@ -1,0 +1,27 @@
+#modalRemision.modal.fade aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#exampleModalLabel.modal-title Incapacidad
+      .modal-body
+        form
+          .form-group
+            label.control-label for="recipient-name" Atencion:
+            select.selectpicker.form-control
+              option value="" 1
+              option value="" 2
+              option value="" 3
+          .form-group
+            label.control-label for="recipient-name" Especialidad:
+            select.selectpicker.form-control
+              option value="" MEDICINA GENERAL
+              option value="" PSICOLOGIA
+              option value="" ODONTOLOGIA
+          .form-group
+            label.control-label for="message-text" Motivo de remision:
+            textarea#message-text.form-control
+      .modal-footer
+        button.btn.btn-danger data-dismiss="modal" type="button"  Cerrar
+        button.btn.btn-primary type="button"  Enviar

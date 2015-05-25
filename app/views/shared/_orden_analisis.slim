@@ -1,0 +1,27 @@
+#ordenAnalisis.modal.fade aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#exampleModalLabel.modal-title Medicamentos
+      .modal-body
+        form
+          .form-group
+            label.control-label for="recipient-name" Atencion:
+            select.selectpicker.form-control id=""
+              option value="" 1
+              option value="" 2
+              option value="" 3
+          .form-group
+            label.control-label for="recipient-name" Servicio:
+            select.selectpicker.form-control id=""
+              option value="" 1
+              option value="" 2
+              option value="" 3
+          .form-group
+            label.control-label for="message-text" Observacion:
+            textarea#message-text.form-control
+      .modal-footer
+        button.btn.btn-danger data-dismiss="modal" type="button"  Cerrar
+        button.btn.btn-primary type="button"  Enviar

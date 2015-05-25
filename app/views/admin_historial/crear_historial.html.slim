@@ -52,12 +52,21 @@
 						li
 							a.btn.btn-danger href="" ng-click="hideFormat()"
 								i.fa.fa-times
-						/ li
-						/ 	a.btn.btn-primary href=""
-						/ 		i.fa.fa-eye
-						/ li
-						/ 	a.btn.btn-primary href=""
-						/ 		i.fa.fa-eye
+						li
+							a.btn.btn-default href="" data-target="#formulaMedica" data-toggle="modal"
+								| Formula Medica
+						li
+							a.btn.btn-default href="" data-target="#incapacidad" data-toggle="modal"
+								| Incapacidad
+						li
+							a.btn.btn-default href="" data-target="#modalMedicamentos" data-toggle="modal"
+								| Medicamentos
+						li
+							a.btn.btn-default href="" data-target="#ordenAnalisis" data-toggle="modal"
+								| Orden de Analisis
+						li
+							a.btn.btn-default href="" data-target="#modalRemision" data-toggle="modal"
+								| Remision
 
 			.body-historial
 				.column-left
@@ -83,10 +92,16 @@
 								input.form-control type="text"
 
 					.footer-bottom
-						a.btn.btn-primary href="" 
+						a.btn.btn-primary href=""
 							| Guardar
 						a.btn.btn-danger href="" ng-click="hideFormat()"
 							| Cancelar
+
+	= render partial: 'shared/formula_medica'
+	= render partial: 'shared/incapacidad'
+	= render partial: 'shared/medicamentos'
+	= render partial: 'shared/orden_analisis'
+	= render partial: 'shared/remision'
 
 
 

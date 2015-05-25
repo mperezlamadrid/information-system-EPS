@@ -349,3 +349,11 @@ body.super_user, body.administracion, body.siau, body.medico_general, body.enfer
 		text-align: left;
 	}
 }
+
+.modal.fade.in{
+	background-color: rgba(0, 0, 0, 0.61);
+
+	.modal-dialog{
+		margin-top: 100px;
+	}
+}
